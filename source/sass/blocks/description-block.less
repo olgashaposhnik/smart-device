@@ -1,0 +1,155 @@
+.description-block {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top;
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+  /*background-color: #68b738; как его правильно задать???*/
+}
+
+.description-block__header {
+  width: 280px;
+  padding-top: 29px;
+  padding-bottom: 19px;
+  margin: 0 auto;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: @font-white;
+}
+
+.description-block__slogan {
+  width: 280px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: @font-white;
+}
+
+.description-block__image {
+  padding-bottom: 3px;
+  margin: 0 auto;
+}
+
+.description-block__button {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #68b738;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .description-block {
+    background: @bg-white;
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    position: relative;
+  }
+
+  .description-block__header {
+    width: 427px;
+    margin: 0;
+    padding-top: 29px;
+    padding-left: 90px;
+    padding-bottom: 19px;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+  }
+
+  .description-block__slogan {
+    width: 427px;
+    margin: 0;
+    padding-top: 29px;
+    padding-left: 90px;
+    padding-bottom: 29px;
+    padding-right: 0px;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+  }
+
+  .description-block__image {
+    width: 709px;
+    height: 609px;
+}
+
+.description-block__button {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #68b738;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 275px;
+  left: 90px;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .description-block {
+    background: url("../img/index-background-desktop.jpg ") no-repeat 50% 0;
+    background-size: 720px auto;
+    width: 975px;
+    margin-right: 285px;
+  }
+}
