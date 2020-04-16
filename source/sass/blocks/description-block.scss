@@ -114,6 +114,10 @@
   z-index: 2;
 }
 
+.description-block__mobilelink{
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .description-block {
     width: 770px;
@@ -186,6 +190,106 @@
     height: 340px;
     left: 510px;
     top: 113px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .description-block {
+    width: 320px;
+    padding-top: 188px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #FFFFFF;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/triangles-main1.svg");
+      width: 320px;
+      height: 550px;
+      left: 0px;
+      top: 49px;
+    }
+  }
+
+  .description-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+  }
+
+  .description-block__header {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+    width: 250px;
+    padding-left: 0px;
+    padding-top: 98px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .description-block__slogan {
+    font-size: 16px;
+    // line-height: 34px;
+    line-height: 156.8%;
+    margin: 0;
+    padding-left: 51px;
+    padding-bottom: 43px;
+    padding-top: 27px;
+    width: 275px;
+    position: relative;
+    z-index: 5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/rectangle-tablet.png");
+      width: 33px;
+      height: 2px;
+      top: 42px;
+      left: 3px;
+    }
+  }
+
+  .description-block__link {
+    display: none;
+  }
+
+  .description-block__mobilelink{
+    display: block;
+    font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-top: 17px;
+    padding-left: 0px;
+    margin-bottom: 69px;
+    margin-left: 3px;
+    background: #00B2FF;
+    border-radius: 5px;
+    width: 287px;
+    height: 55px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .description-block__scroll{
+    display: none;
+  }
+
+  .description-block__image {
+    position: absolute;
+    width: 301px;
+    height: 220px;
+    left: 26px;
+    top: 92px;
     z-index: 2;
   }
 }
