@@ -1,0 +1,42 @@
+.consult {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1920px;
+  margin: 0 auto;
+  padding-left: 250px;
+  padding-right: 250px;
+
+  background-color: #1B2D37;
+  background-image: url("../img/background.png");
+
+  color: #FFFFFF;
+  position: relative;
+}
+
+.consult__header {
+
+}
+
+.consult__text {
+
+}
+
+.consult__form {
+  width: 1920px;
+}
+
+// <section class="consult">
+//       <a name="consult">
+//         <h2 class="consult__header">Остались вопросы? Задайте их нам!</h2>
+//         <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
+//         <form class="consult__form" action="index.html" method="post">
+//           <input class="consult__form--name" type="text" size="270" placeholder="Имя">
+//           <input class="consult__form--phone" type="text" size="269" placeholder="Телефон">
+//           <input class="consult__form--question" type="text" size="570" placeholder="Ваш вопрос">
+//           <button type="button" class="consult__form--button">Задать вопрос</button>
+//           <input type="checkbox">
+//           <p class="consult__form--agree">Я согласен на обработку персональных данных</p>
+//         </form>
+//       </a>
+//     </section>

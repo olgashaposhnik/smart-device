@@ -11,6 +11,7 @@
   background-image: url("../img/background.png");
 
   color: #FFFFFF;
+  position: relative;
 }
 
 .description-block__wrapper {
@@ -35,6 +36,22 @@
   font-size: 22px;
   padding-left: 97px;
   padding-bottom: 37px;
+  width: 683px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/rectangle.png"); // путь!!!!!!
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    background: #FFFFFF;
+    //       width: 50%;
+    //       height: 696px;
+    //       top: 0;
+    //       left: 50%;
+  }
 }
 
 .description-block__link {
@@ -45,6 +62,7 @@
   line-height: 19px;
   text-align: center;
   padding-top: 17px;
+  margin-bottom: 278px;
   margin-left: 97px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -63,16 +81,15 @@
   color: #FFFFFF;
   opacity: 0.5;
   transform: rotate(-90deg);
-  width: 93px;
+  width: 193px;
   height: 16px;
+  padding-left: 190px;
+  padding-bottom: 190px;
 }
 
-// <section class="description-block">
-//       <div class="description-block__wrapper">
-//         <h1 class="description-block__header">Печатные платы</h1>
-//         <b class="description-block__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</b>
-//         <a class="description-block__link" href="#consult">Получить бесплатную консультацию</a>
-//         <a class="description-block__scroll" href="#advantages">Скролл вниз</a>
-//       </div>
-//       <img class="description-block__image" src="img/index-board-mobile.png" width="705" height="515" alt="«Smart Device»">
-//     </section>
+.description-block__image {
+  position: absolute;
+  left: 1100px;
+  top: 50px;
+}
+
