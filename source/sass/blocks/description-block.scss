@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 1920px;
   margin: 0 auto;
+  padding-top: 312px;
   padding-left: 250px;
   padding-right: 250px;
 
@@ -12,6 +13,19 @@
 
   color: #FFFFFF;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangles-main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1520px;
+    height: 750px;
+    left: 200px;
+    top: 66px;
+    z-index: 1;
+  }
 }
 
 .description-block__wrapper {
@@ -27,6 +41,7 @@
   font-size: 80px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .description-block__slogan {
@@ -34,23 +49,24 @@
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
+  line-height: 34px;
+  margin: 0;
   padding-left: 97px;
-  padding-bottom: 37px;
-  width: 683px;
+  padding-bottom: 44px;
+  padding-top: 21px;
+  width: 710px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/rectangle.png"); // путь!!!!!!
+    background-image: url("../img/rectangle.png");
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 2;
-    background: #FFFFFF;
-    //       width: 50%;
-    //       height: 696px;
-    //       top: 0;
-    //       left: 50%;
+    width: 66px;
+    height: 2px;
+    top: 38px;
+    left: 2px;
   }
 }
 
@@ -62,7 +78,7 @@
   line-height: 19px;
   text-align: center;
   padding-top: 17px;
-  margin-bottom: 278px;
+  margin-bottom: 275px;
   margin-left: 97px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -81,15 +97,96 @@
   color: #FFFFFF;
   opacity: 0.5;
   transform: rotate(-90deg);
-  width: 193px;
+  width: 293px;
   height: 16px;
-  padding-left: 190px;
-  padding-bottom: 190px;
+  position: absolute;
+  left: 114px;
+  top: 634px;
+  // padding-left: 190px;
+  // margin-top: -95px;
+  // margin-left: -136px;
 }
 
 .description-block__image {
   position: absolute;
-  left: 1100px;
-  top: 50px;
+  left: 1038px;
+  top: 258px;
+  z-index: 2;
+}
+
+@media (max-width: $tablet-width) {
+  .description-block {
+    width: 770px;
+    padding-top: 188px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFFFFF;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/triangles-tablet.png");
+      width: 820px;
+      height: 750px;
+      left: -25px;
+      top: -94px;
+    }
+  }
+
+  .description-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1670px;
+  }
+
+  .description-block__header {
+    font-size: 60px;
+    line-height: 70px;
+    width: 400px;
+    padding-left: 68px;
+  }
+
+  .description-block__slogan {
+    font-size: 18px;
+    // line-height: 34px;
+    line-height: 156.8%;
+    margin: 0;
+    padding-left: 119px;
+    padding-bottom: 55px;
+    padding-top: 29px;
+    width: 500px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/rectangle-tablet.png");
+      width: 33px;
+      height: 2px;
+      top: 44px;
+      left: 71px;
+    }
+  }
+
+  .description-block__link {
+    padding-top: 17px;
+    margin-bottom: 163px;
+    margin-left: 119px;
+    width: 379px;
+    height: 55px;
+  }
+
+  .description-block__scroll{
+    display: none;
+  }
+
+  .description-block__image {
+    position: absolute;
+    width: 465px;
+    height: 340px;
+    left: 510px;
+    top: 113px;
+    z-index: 2;
+  }
 }
 
