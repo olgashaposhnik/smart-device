@@ -1,6 +1,6 @@
 .consult {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
@@ -8,32 +8,155 @@
   padding-right: 250px;
   color: #FFFFFF;
   position: relative;
+  background: #00B2FF;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/paper_airplane.png");
+    background-position: center;
+    width: 511px;
+    height: 288px;
+    top: 160px;
+    left: 351px;
+    z-index: 1;
+  }
 }
 
 .consult__header {
-
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  padding: 0;
+  margin: 0;
+  padding-top: 90px;
+  padding-left: 721px;
+  padding-bottom: 10px;
 }
 
 .consult__text {
-
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+  padding-left: 725px;
+  padding-bottom: 52px;
 }
 
 .consult__form {
-  width: 100%;
+  width: 570px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 725px;
+}
+
+.consult__form input {
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  resize: none;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+
+  &::placeholder {
+    color: #FFFFFF;
+  }
 }
 
 .consult__form--name {
-  width: 100%;
+  color: #FFFFFF;
+  width: 270px;
+  margin-right: 30px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 14px;
 }
 
 .consult__form--phone {
-  width: 100%;
+  width: 270px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 
 .consult__form--question {
   width: 100%;
+  padding-top: 12px;
+  padding-bottom: 122px;
+  padding-left: 15px;
 }
 
+.consult__form--button {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 270px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-left: 0;
+  margin-bottom: 114px;
+}
+
+.consult__form--checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.consult__form--checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.consult__form--checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.consult__form--checkbox:checked+label::before {
+  background-image: url("../img/checkbox.svg");
+}
+
+.consult__form--label {
+  width: 230px;
+  padding-left: 39px;
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(255,255,255, 0.8);
+}
 
 // <section class="consult">
 //       <a name="consult">
@@ -44,8 +167,8 @@
 //           <input class="consult__form--phone" type="text" size="269" placeholder="Телефон">
 //           <input class="consult__form--question" type="text" size="570" placeholder="Ваш вопрос">
 //           <button type="button" class="consult__form--button">Задать вопрос</button>
-//           <input type="checkbox">
-//           <p class="consult__form--agree">Я согласен на обработку персональных данных</p>
+//           <input class="consult__form--checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
+// <label for="agree">Я согласен на обработку персональных данных</label>
 //         </form>
 //       </a>
 //     </section>

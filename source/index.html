@@ -69,24 +69,24 @@
       <a name="services"></a>
         <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
         <ul class="services__list">
-          <li class="services__item"><a href=# name="manufacture">Производство печатных плат</a></li>
-          <li class="services__item"><a href=# name="installation">Монтаж печатных плат</a></li>
-          <li class="services__item"><a href=# name="catalog">Комплектующие для светотехники</a></li>
+          <li class="services__item services__item--manufacture"><a href=# name="manufacture">Производство печатных плат</a></li>
+           <li class="services__item services__item--installation"><a href=# name="installation">Монтаж печатных плат</a></li>
+           <li class="services__item services__item--catalog"><a href=# name="catalog">Комплектующие для светотехники</a></li>
         </ul>
     </section>
     <section class="consult">
-      <a name="consult">
+      <a name="consult"></a>
         <h2 class="consult__header">Остались вопросы? Задайте их нам!</h2>
         <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
+        <!-- <img class="consult__image" src="img/logotype-mobile.svg" alt="Печатные платы «Smart Device»"> -->
         <form class="consult__form" action="index.html" method="post">
           <input class="consult__form--name" type="text" size="270" placeholder="Имя">
           <input class="consult__form--phone" type="text" size="269" placeholder="Телефон">
           <input class="consult__form--question" type="text" size="570" placeholder="Ваш вопрос">
           <button type="button" class="consult__form--button">Задать вопрос</button>
-          <input type="checkbox">
-          <p class="consult__form--agree">Я согласен на обработку персональных данных</p>
+          <input class="consult__form--checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
+          <label class="consult__form--label" for="agree">Я согласен на обработку персональных данных</label>
         </form>
-      </a>
     </section>
   </main>
   <footer class="page-footer">

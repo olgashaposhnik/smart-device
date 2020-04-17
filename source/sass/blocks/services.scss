@@ -10,7 +10,7 @@
 }
 
 .services__header{
-  font-family: "RobotoCondensed-Bold";
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -19,12 +19,13 @@
   padding: 0;
   margin: 0;
   padding-top: 88px;
-  padding-left: 124px;
+  padding-left: 125px;
+  padding-bottom: 52px;
 }
 
 .services__list {
   list-style: none;
-  font-family: "RobotoCondensed-Bold";
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -32,6 +33,59 @@
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
+  padding-left: 125px;
+  padding-bottom: 129px;
+}
+
+.services__item {
+  width: 370px;
+  margin-right: 30px;
+  padding-top: 50px;
+  padding-left: 44px;
+  padding-right: 157px;
+  padding-bottom: 509px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/service-square.svg");
+    background-position: center;
+    width: 63px;
+    height: 63px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+  }
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/service-vector.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 8px;
+    bottom: 26px;
+    right: 19px;
+    z-index: 3;
+  }
+
+  &--manufacture {
+    background-image: url("../img/service1.png");
+  }
+
+  &--installation {
+    background-image: url("../img/service2.png");
+  }
+
+  &--catalog {
+    background-image: url("../img/service3.png");
+  }
 }
 
 
@@ -39,8 +93,8 @@
 //       <a name="services"></a>
 //         <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
 //         <ul class="services__list">
-//           <li class="services__item"><a href=# name="manufacture">Производство печатных плат</a></li>
-//           <li class="services__item"><a href=# name="installation">Монтаж печатных плат</a></li>
-//           <li class="services__item"><a href=# name="catalog">Комплектующие для светотехники</a></li>
+//           <li class="services__item services__item--manufacture"><a href=# name="manufacture">Производство печатных плат</a></li>
+//           <li class="services__item services__item--installation"><a href=# name="installation">Монтаж печатных плат</a></li>
+//           <li class="services__item services__item--catalog"><a href=# name="catalog">Комплектующие для светотехники</a></li>
 //         </ul>
 //     </section>
