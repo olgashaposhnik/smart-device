@@ -2,31 +2,187 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 250px;
   padding-right: 250px;
-
-  // background-color: #1B2D37;
-  // background-image: url("../img/background.png");
+  padding-top: 112px;
+  padding-bottom: 75px;
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle-middle-adv.svg");
+    background-position: center;
+    width: 636px;
+    height: 640px;
+    top: 561px;
+    left: -30px;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle-little-adv.svg");
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    top: 7px;
+    left: 170px;
+    z-index: -1;
+  }
 }
 
 .advantages__list {
   list-style-type: none;
-  width: 1170px;
+  width: 1355px;
   margin: 0;
   padding: 0;
+  padding-left: 125px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle-big-adv.svg");
+    background-position: center;
+    width: 636.33px;
+    height: 640px;
+    top: 152px;
+    left: 428px;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle-little-right-adv.svg");
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    top: 246px;
+    left: 1274px;
+    z-index: -1;
+  }
 }
 
 .advantages__item {
   width: 570px;
+  height: 299px;
   margin: 0;
   padding: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/band.svg");
+    background-position: center;
+    width: 3px;
+    height: 299px;
+    background: #00B2FF;
+    top: 0px;
+    left: 0px;
+  }
+
+
+  &:hover {
+    background-color: #00B2FF;
+    color: #FFFFFF; //  не работает???
+  }
+
+  &:hover::before {
+    fill: #FFFFFF; //  не работает???
+  }
+
+  &--terms::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/terms.svg");
+    background-position: center;
+    width: 29px;
+    height: 35px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 44px;
+  }
+
+  &--suppliers::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/suppliers.svg");
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 44px;
+  }
+
+  &--confidence::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/confidence.svg");
+    background-position: center;
+    width: 36px;
+    height: 31px;
+    background-repeat: no-repeat;
+    top: 42px;
+    left: 44px;
+  }
+
+  &--cost::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/cost.svg");
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    top: 39px;
+    left: 44px;
+  }
 }
+
+.advantages__title {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+  margin: 0;
+  padding: 0;
+  padding-left: 44px;
+  padding-top: 93px;
+  padding-bottom: 17px;
+}
+
+.advantages__description {
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+  padding-left: 43px;
+  padding-bottom: 66px;
+  width: 532px;
+}
+
 
 
 // <section class="advantages">
@@ -34,7 +190,7 @@
 //         <div class="advantages__wrapper">
 //           <h2 class="visually-hidden">Преимущества</h2>
 //           <ul class="advantages__list">
-//             <li class="advantages__item advantages__item--terms">
+//             <li class="advantages__item advantages__item--active advantages__item--terms">
 //               <h3 class="advantages__title">Оперативные сроки</h3>
 //               <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
 //             </li>

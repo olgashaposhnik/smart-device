@@ -1,0 +1,71 @@
+.about-company {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 250px;
+  padding-right: 226px;
+  position: relative;
+  padding-bottom: 110px;
+}
+
+.about-company__header {
+  font-family: "RobotoCondensed-Bold";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  padding: 0;
+  padding-left: 305px;
+  padding-bottom: 21px;
+  color: #666666;
+}
+
+.about-company__text {
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+  padding-left: 305px;
+  padding-bottom: 21px;
+}
+
+.about-company__button {
+  font-family: "RobotoCondensed-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+  width: 180px;
+  height: 45px;
+  border: 1px solid #00B2FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-left: 305px;
+  margin-top: 17px;
+}
+
+.about-company__image {
+  position: absolute;
+  left: 346px;
+  top: 7px;
+  width: 217px;
+  height: 313px;
+}
+
+// <section class="about-company">
+//       <h2 class="about-company__header"><a name="about">О компании</a></h2>
+//       <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+//       <img class="about-company__image" src="img/index-2005.png" width="317" height="220" alt="2005">
+//       <a class="about-company__link" href="#services">Подробнее</a>
+//     </section>

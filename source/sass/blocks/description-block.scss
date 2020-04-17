@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 312px;
   padding-left: 250px;
@@ -120,7 +120,7 @@
 
 @media (max-width: $tablet-width) {
   .description-block {
-    width: 770px;
+    width: 100%;
     padding-top: 188px;
     padding-left: 20px;
     padding-right: 20px;
@@ -196,7 +196,7 @@
 
 @media (max-width: $mobile-width) {
   .description-block {
-    width: 320px;
+    width: 100%;
     padding-top: 188px;
     padding-left: 15px;
     padding-right: 15px;

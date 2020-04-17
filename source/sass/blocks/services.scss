@@ -1,0 +1,46 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 250px;
+  padding-right: 226px;
+  position: relative;
+  background: #1B2D37;
+}
+
+.services__header{
+  font-family: "RobotoCondensed-Bold";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  padding-top: 88px;
+  padding-left: 124px;
+}
+
+.services__list {
+  list-style: none;
+  font-family: "RobotoCondensed-Bold";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+
+// <section class="services">
+//       <a name="services"></a>
+//         <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
+//         <ul class="services__list">
+//           <li class="services__item"><a href=# name="manufacture">Производство печатных плат</a></li>
+//           <li class="services__item"><a href=# name="installation">Монтаж печатных плат</a></li>
+//           <li class="services__item"><a href=# name="catalog">Комплектующие для светотехники</a></li>
+//         </ul>
+//     </section>
