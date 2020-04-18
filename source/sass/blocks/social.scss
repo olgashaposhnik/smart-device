@@ -1,0 +1,178 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  padding-top: 54px;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  margin: 0;
+  padding: 0;
+}
+
+// .social__item:first-child {
+//   // margin-left: 0;
+//   padding-right: 10px;
+//   // padding-bottom: 32px;
+// }
+
+// .social__item:nth-child(2) {
+//   // padding-top: 22px;
+//   // padding-bottom: 27px;
+// }
+
+// .social__item:nth-child(3) {
+//   // padding-bottom: 27px;
+// }
+
+.social__item:nth-child(4n) {
+  margin-left: 0;
+}
+
+.social__link {
+  display: block;
+  position: relative;
+
+  &--facebook {
+    width: 27px;
+    height: 27px;
+    margin-right: -3px;
+  }
+
+  &--ok {
+    width: 27px;
+    height: 27px;
+  }
+
+  &--vk {
+    width: 27px;
+    height: 27px;
+  }
+
+  &--facebook::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/fb.svg");
+    background-position: center;
+    width: 27px;
+    height: 27px;
+    top: 0px;
+    left: 0px;
+  }
+
+  &--ok::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/ok.svg");
+    background-position: center;
+    width: 27px;
+    height: 26px;
+    top: 0px;
+    left: 0px;
+  }
+
+  &--vk::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/vk.svg");
+    background-position: center;
+    width: 27px;
+    height: 25px;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+//   <div class="page-footer__social social">
+//     <ul class="social__list">
+//       <li class="social__item">
+//         <a class="social__link social__link--facebook" href=#></a>
+//       </li>
+//       <li class="social__item">
+//         <a class="social__link social__link--ok" href=#></a>
+//       </li>
+//       <li class="social__item">
+//         <a class="social__link social__link--vk" href=#></a>
+//       </li>
+//     </ul>
+//   </div>
+
+// @media (max-width: $tablet-width) {
+//   .social {
+//     width: 150px;
+//     padding: 0;
+
+//     background-color: #f2f2f2;
+
+//     &::before {
+//       display: none;
+//     }
+
+//     &::after {
+//       display: none;
+//     }
+//   }
+
+//   .social__list {
+//     width: 136px;
+//   }
+
+//   .social__item:first-child {
+//     margin-left: 1px;
+//     margin-right: -2px;
+//     padding-bottom: 37px;
+//     padding-right: 12px;
+//   }
+
+//   .social__item:nth-child(2) {
+//     padding-top: 0;
+//     padding-bottom: 34px;
+//   }
+
+//   .social__item:nth-child(4n) {
+//     margin-left: 0;
+//     padding-bottom: 30px;
+//   }
+
+//   .social__item:nth-child(3n) {
+//     margin-top: 6px;
+//     margin-right: 12px;
+//     margin-left: 15px;
+//     padding-bottom: 32px;
+//   }
+
+//   .social__link {
+//     display: block;
+
+//     &--vkontakte {
+//       width: 30px;
+//       height: 16px;
+//     }
+
+//     &--instagram {
+//       width: 23px;
+//       height: 23px;
+//     }
+
+//     &--facebook {
+//       width: 14px;
+//       height: 28px;
+//     }
+//   }
+// }

@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
+    <a href="#" class="page-header__logo">
       <img class="page-header__logo-image" src="img/logotype.svg" width="52" height="52" alt="Печатные платы «Smart Device»">
       <div class="page-header__logo-wrapper">
         <p class="page-header__logo-text">Smart Device</p>
@@ -35,8 +35,7 @@
       <img class="description-block__image" src="img/board.png" width="705" height="515" alt="«Smart Device»">
     </section>
     <section class="advantages">
-      <a name="advantages"></a>
-        <!-- <div class="advantages__wrapper"> -->
+      <a href="#" name="advantages"></a>
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--active advantages__item--terms">
@@ -56,7 +55,6 @@
               <p class="advantages__description">Мы&nbsp; подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
           </ul>
-        <!-- </div> -->
     </section>
     <section class="about-company">
       <h2 class="about-company__header"><a name="about">О компании</a></h2>
@@ -66,7 +64,7 @@
       <button type="button" class="about-company__button" href="#services">Подробнее</button>
     </section>
     <section class="services">
-      <a name="services"></a>
+      <a href="#" name="services"></a>
         <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
         <ul class="services__list">
           <li class="services__item services__item--manufacture"><a href=# name="manufacture">Производство печатных плат</a></li>
@@ -75,74 +73,80 @@
         </ul>
     </section>
     <section class="consult">
-      <a name="consult"></a>
+      <a href="#" name="consult"></a>
         <h2 class="consult__header">Остались вопросы? Задайте их нам!</h2>
         <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
-        <!-- <img class="consult__image" src="img/logotype-mobile.svg" alt="Печатные платы «Smart Device»"> -->
         <form class="consult__form" action="index.html" method="post">
-          <input class="consult__form--name" type="text" size="270" placeholder="Имя">
-          <input class="consult__form--phone" type="text" size="269" placeholder="Телефон">
-          <input class="consult__form--question" type="text" size="570" placeholder="Ваш вопрос">
-          <button type="button" class="consult__form--button">Задать вопрос</button>
+          <input class="consult__form--name" type="text" placeholder="Имя">
+          <input class="consult__form--phone" type="text" placeholder="Телефон">
+          <input class="consult__form--question" type="text" placeholder="Ваш вопрос">
+          <button type="submit" class="consult__form--button">Задать вопрос</button>
           <input class="consult__form--checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
           <label class="consult__form--label" for="agree">Я согласен на обработку персональных данных</label>
         </form>
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="52" height="52" alt="Печатные платы «Smart Device»">
-      <div class="page-footer__logo-text">Smart Device</div>
-      <div class="page-footer__logo-explanation">умные технологии</div>
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href=#></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--ok" href=#></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href=#></a>
-        </li>
-      </ul>
-    </div>
-    <nav class="page-footer__navigation navigation">Разделы сайта
-      <div class="navigation__wrapper">
-        <ul class="navigation__list">
-          <li class="navigation-list__item">
-            <a href="#about">О компании</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#services">Продукты</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#manufacture">Производство печатных плат</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#installation">Монтаж печатных плат</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#catalog">Комплектующие</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#delivery">Доставка</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__wrap">
+        <a href="#" class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logotype.svg" width="52" height="52" alt="Печатные платы «Smart Device»">
+          <div class="page-footer__logo-wrapper">
+            <p class="page-footer__logo-text">Service Device</p>
+            <p class="page-footer__logo-explanation">умные технологии</p>
+          </div>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#"></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
-    <div class="page-footer__contacts footer-contacts">
-      <b class="footer-contacts__text">Наш офис</b>
-      <p class="footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10 +7 (495) 589-40-50 +7 (925) 003-87-67 +7 (926) 926-080-79</p>
+      <nav class="page-footer__navigation navigation">Разделы сайта
+          <ul class="navigation__list">
+            <li class="navigation-list__item">
+              <a href="#about">О компании</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#services">Продукты</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#manufacture">Производство печатных плат</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#installation">Монтаж печатных плат</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#catalog">Комплектующие</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#delivery">Доставка</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+      </nav>
+      <div class="page-footer__contacts footer-contacts">
+        <h3 class="footer-contacts__header">Наш офис</h3>
+        <p class="footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10</p>
+        <p class="footer-contacts__text"><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
+        <p class="footer-contacts__text"><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
+        <p class="footer-contacts__text"><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
+      </div>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Все права защищены</p>
-      <p class="copyright__text">1999-2018 SD Service Devices</p>
-      <p class="copyright__text">Условия конфиденциальности</p>
+      <p class="copyright__text copyright__text--rights">Все права защищены</p>
+      <p class="copyright__text copyright__text--year">1999-2018 SD Service Devices</p>
+      <p class="copyright__text copyright__text--conditions">Условия конфиденциальности</p>
       <a class="copyright__link" href="#">Developed by wow studio</a>
     </div>
   </footer>

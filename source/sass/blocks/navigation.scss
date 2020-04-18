@@ -1,0 +1,72 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+  padding-left: 11px;
+  width: 505px;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+}
+
+.navigation__list {
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+  text-transform: none;
+  list-style: none;
+  letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  margin-left: -2px;
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navigation-list__item {
+  padding-left: 0px;
+}
+
+
+// <nav class="page-footer__navigation navigation">Разделы сайта
+//         <div class="navigation__wrapper">
+//           <ul class="navigation__list">
+//             <li class="navigation-list__item">
+//               <a href="#about">О компании</a>
+//             </li>
+//             <li class="navigation-list__item">
+//               <a href="#services">Продукты</a>
+//             </li>
+//             <li class="navigation-list__item">
+//               <a href="#manufacture">Производство печатных плат</a>
+//             </li>
+//             <li class="navigation-list__item">
+//               <a href="#installation">Монтаж печатных плат</a>
+//             </li>
+//             <li class="navigation-list__item">
+//               <a href="#catalog">Комплектующие</a>
+//             </li>
+//             <li class="navigation-list__item">
+//               <a href="#delivery">Доставка</a>
+//             </li>
+//             <li class="navigation-list__item">
+//               <a href="#contacts">Контакты</a>
+//             </li>
+//           </ul>
+//         </div>
+//       </nav>
