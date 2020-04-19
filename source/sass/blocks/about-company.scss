@@ -3,8 +3,8 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding-left: 250px;
-  padding-right: 226px;
+  padding-left: 13%;
+  padding-right: 11.8%;
   position: relative;
   padding-bottom: 110px;
 }
@@ -20,6 +20,7 @@
   padding-left: 305px;
   padding-bottom: 21px;
   color: #666666;
+  width: 67.2%;
 }
 
 .about-company__text {
@@ -32,8 +33,10 @@
   margin: 0;
   padding: 0;
   padding-left: 305px;
+  // padding-left: 11%;
   padding-bottom: 21px;
-  width: 1290px;
+  // width: 1290px;
+  width: 89%;
 }
 
 .about-company__button {
@@ -58,7 +61,8 @@
 
 .about-company__image {
   position: absolute;
-  left: 346px;
+  // left: 346px;
+  left: 18%;
   top: 7px;
   width: 217px;
   height: 313px;

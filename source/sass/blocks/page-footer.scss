@@ -16,9 +16,11 @@
   width: 100%;
   // margin: 0 auto;
   padding: 0;
-  padding-right: 255px;
-  padding-left: 252px;
-  padding-bottom: 57px;
+  // padding-right: 255px;
+  // padding-left: 252px;
+  padding-right: 13.3%;
+  padding-left: 13.1%;
+  // padding-bottom: 57px;
   justify-content: space-between;
   border-bottom: 1px solid rgba(98,105,98,0.2);
   position: relative;
@@ -40,7 +42,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   justify-content: flex-start;
