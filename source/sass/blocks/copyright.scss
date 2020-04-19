@@ -4,8 +4,8 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 252px;
-  padding-right: 256px;
+  padding-right: 13.3%;
+  padding-left: 13.1%;
   // justify-content: space-between;
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
@@ -27,19 +27,22 @@
   padding-bottom: 14px;
 
   &--rights {
-    width: 204px;
+    // width: 204px;
+    width: 25.2%;
     margin-right: 20px;
     text-align: left;
   }
 
   &--year {
-    width: 355px;
+    // width: 355px;
+    width: 18.5%;
     text-align: left;
     margin-right: 20px;
   }
 
   &--conditions {
-    width: 319px;
+    // width: 319px;
+    width: 28.5%;
     text-align: left;
     margin-right: 20px;
   }
