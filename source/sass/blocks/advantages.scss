@@ -80,7 +80,8 @@
 .advantages__item {
   // width: 570px;
   width: 47.5%;
-  height: 299px;
+  // height: 299px;
+  min-height: 299px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 30px;
@@ -88,19 +89,20 @@
   border: 1px solid #EBEBEB;
   box-sizing: border-box;
   position: relative;
+  border-left: 3px solid #00B2FF;
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/band.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 3px;
-    height: 299px;
-    background: #00B2FF;
-    top: 0px;
-    left: 0px;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../img/band.svg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   width: 3px;
+  //   height: 299px;
+  //   background: #00B2FF;
+  //   top: 0px;
+  //   left: 0px;
+  // }
 
   &:hover {
     background-color: #00B2FF;
