@@ -136,6 +136,7 @@
     padding-right: 2.7%;
     color: #FFFFFF;
     position: relative;
+    overflow: hidden;
 
     // &::before {
     //   content: "";
@@ -163,15 +164,13 @@
 
     &::before {
       content: "";
-      position: absolute;
       background-image: url("../img/triangles-description-tablet.svg");
-      background-position: center;
       background-repeat: no-repeat;
-      width: 63%;
-      height: 78%;
-      top: -21.9%;
-      left: 95%;
-      z-index: 1;
+      top: -129px;
+      left: 92%;
+      width: 68%;
+      height: 86%;
+      overflow: hidden;
     }
   }
 
@@ -237,49 +236,35 @@
   .description-block {
     width: 100%;
     padding-top: 188px;
-    // padding-left: 15px;
-    // padding-right: 15px;
+    padding-bottom: 70px;
     padding-left: 4.7%;
     padding-right: 4.7%;
     color: #FFFFFF;
     position: relative;
+    overflow: hidden;
 
     &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/triangles-main1.svg");
-      width: 320px;
-      height: 550px;
-      left: 0px;
-      top: 49px;
+      display: none;
     }
+  }
 
-    // .description-block {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   width: 100%;
-//   margin: 0 auto;
-//   padding-top: 312px;
-
-//   background-color: #1B2D37;
-//   background-image: url("../img/background.png");
-
-//   color: #FFFFFF;
-// }
+  .description-block__wrap {
+    width: 100%;
   }
 
   .description-block__wrapper {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   .description-block__header {
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.07em;
-    width: 250px;
+    width: 100%;
     padding-left: 0px;
     padding-top: 98px;
     position: relative;
@@ -294,7 +279,7 @@
     padding-left: 51px;
     padding-bottom: 43px;
     padding-top: 27px;
-    width: 275px;
+    width: 100%;
     position: relative;
     z-index: 5;
 
@@ -326,7 +311,7 @@
     padding-top: 17px;
     padding-left: 0px;
     margin-bottom: 69px;
-    margin-left: 3px;
+    margin: 0 auto;
     background: #00B2FF;
     border-radius: 5px;
     width: 287px;
@@ -341,10 +326,13 @@
 
   .description-block__image {
     position: absolute;
+    margin: 0;
     width: 301px;
     height: 220px;
-    left: 26px;
-    top: 92px;
+    // left: -10px;
+    // top: -12px;
+    left: 5%;
+    bottom: 68%;
     z-index: 2;
   }
 }

@@ -73,7 +73,7 @@
 
 @media (max-width: $tablet-width) {
   .contacts {
-    width: 69%;
+    width: 22.3%;
     padding: 0;
 
     // &::before {
@@ -90,9 +90,12 @@
 
   .contacts__mobile {
     display: block;
-    background-image: url("../img/mobile-menu.png");
-    width: 27px;
-    height: 18.67px;
+    background-image: url("../img/mobile-menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 37px;
+    height: 13px;
+    margin-top: 21px;
   }
 
   .contacts__email {
@@ -105,11 +108,10 @@
       position: absolute;
       background-image: url("../img/envelope.svg");
       background-repeat: no-repeat;
-      background-position: top 0% right 1%;
       width: 27px;
       height: 18.67px;
-      // top: 0%;
-      // right: 1%;
+      top: 5px;
+      left: -3px;
     }
   }
 
@@ -121,7 +123,7 @@
     padding-right: 38px;
     position: relative;
     margin-top: 13px;
-    padding-left: 102px;
+    padding-left: 0px;
 
     &::before {
       content: "";
@@ -146,18 +148,28 @@
 
 @media (max-width: $mobile-width) {
   .contacts {
-    width: 400px;
+    width: 78%;
     padding: 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/mobile-menu.svg");
-      width: 37px;
-      height: 13px;
-      top: 27px;
-      right: 115px;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/mobile-menu.svg");
+    //   width: 37px;
+    //   height: 13px;
+    //   top: 27px;
+    //   right: 115px;
+    // }
+  }
+
+  .contacts__mobile {
+    display: block;
+    background-image: url("../img/mobile-menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 37px;
+    height: 13px;
+    margin-top: 15px;
   }
 
   .contacts__email {
@@ -171,8 +183,8 @@
       background-image: url("../img/envelope.svg");
       width: 27px;
       height: 18.67px;
-      top: -1px;
-      left: 104px;
+      top: 0%;
+      left: 0%;
     }
   }
 
@@ -184,7 +196,7 @@
     padding-right: 38px;
     position: relative;
     margin-top: 13px;
-    padding-left: 102px;
+    padding-left: 0px;
 
     &::before {
       content: "";

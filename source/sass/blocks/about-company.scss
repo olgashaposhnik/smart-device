@@ -68,9 +68,91 @@
   height: 313px;
 }
 
-// <section class="about-company">
-//       <h2 class="about-company__header"><a name="about">О компании</a></h2>
-//       <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-//       <img class="about-company__image" src="img/index-2005.png" width="317" height="220" alt="2005">
-//       <a class="about-company__link" href="#services">Подробнее</a>
-//     </section>
+@media (max-width: $tablet-width) {
+  .about-company {
+    margin: 0;
+    margin-right: -3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    position: relative;
+    padding-bottom: 83px;
+  }
+
+  .about-company__header {
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 140.62%;
+    margin: 0;
+    padding: 0;
+    padding-left: 27%;
+    padding-bottom: 23px;
+    width: 67.2%;
+  }
+
+  .about-company__text {
+    margin: 0;
+    padding: 0;
+    padding-left: 27.8%;
+    padding-bottom: 21px;
+    width: 96%;
+    // max-height: 109px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .about-company__button {
+    background-color: transparent;
+    margin-left: 27.6%;
+    margin-top: 17px;
+  }
+
+  .about-company__image {
+    position: absolute;
+    left: -1%;
+    top: 0%;
+    width: 249px;
+    height: 361px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company {
+    margin: 0;
+    margin-right: -3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    position: relative;
+    padding-bottom: 64px;
+  }
+
+  .about-company__header {
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    padding-left: 4%;
+    padding-bottom: 20px;
+    width: 67.2%;
+  }
+
+  .about-company__text {
+    margin: 0;
+    padding: 0;
+    padding-left: 5.3%;
+    padding-bottom: 39px;
+    width: 96%;
+    // max-height: 109px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .about-company__button {
+    background-color: transparent;
+    margin-left: 5.6%;
+    margin-top: 17px;
+  }
+
+  .about-company__image {
+    display: none;
+  }
+}

@@ -4,8 +4,6 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  // padding-left: 250px;
-  // padding-right: 250px;
   padding-top: 112px;
   padding-bottom: 75px;
   position: relative;
@@ -16,71 +14,27 @@
     background-image: url("../img/triangle-middle-adv.svg"); // переименовать!
     background-position: center;
     background-repeat: no-repeat;
-    // width: 1892px;
     width: 98.5%;
     height: 1273px;
     top: 44px;
     left: 0px;
     z-index: -1;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/triangle-little-adv.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   width: 400px;
-  //   height: 400px;
-  //   top: 7px;
-  //   left: 170px;
-  //   z-index: -1;
-  // }
 }
 
 .advantages__list {
   list-style-type: none;
-  // width: 1355px;
   width: 62.5%;
   margin: 0 auto;
   padding: 0;
-  // padding-left: 125px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/triangle-big-adv.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   width: 636.33px;
-  //   height: 640px;
-  //   top: 152px;
-  //   left: 428px;
-  //   z-index: -1;
-  // }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/triangle-little-right-adv.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   width: 400px;
-  //   height: 400px;
-  //   top: 246px;
-  //   left: 1274px;
-  //   z-index: -1;
-  // }
 }
 
 .advantages__item {
-  // width: 570px;
   width: 47.5%;
-  // height: 299px;
   min-height: 299px;
   margin: 0 auto;
   padding: 0;
@@ -90,19 +44,6 @@
   box-sizing: border-box;
   position: relative;
   border-left: 3px solid #00B2FF;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/band.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   width: 3px;
-  //   height: 299px;
-  //   background: #00B2FF;
-  //   top: 0px;
-  //   left: 0px;
-  // }
 
   &:hover {
     background-color: #00B2FF;
@@ -188,34 +129,223 @@
   padding: 0;
   padding-left: 43px;
   padding-bottom: 66px;
-  // width: 532px;
   width: 93.3%;
 }
 
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 54px;
+    padding-bottom: 23px;
+    position: relative;
+    overflow: hidden;
 
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/triangle-tablet-adv.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 636.33px;
+      height: 640px;
+      top: 207px;
+      left: 172px;
+      z-index: -1;
+    }
+  }
 
-// <section class="advantages">
-//       <a name="advantages">
-//         <div class="advantages__wrapper">
-//           <h2 class="visually-hidden">Преимущества</h2>
-//           <ul class="advantages__list">
-//             <li class="advantages__item advantages__item--active advantages__item--terms">
-//               <h3 class="advantages__title">Оперативные сроки</h3>
-//               <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-//             </li>
-//             <li class="advantages__item advantages__item--suppliers">
-//               <h3 class="advantages__title">Крупные поставщики</h3>
-//               <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-//             </li>
-//             <li class="advantages__item advantages__item--confidence">
-//               <h3 class="advantages__title">Полная конфиденциальность</h3>
-//               <p class="advantages__description"></p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-//             </li>
-//             <li class="advantages__item advantages__item--cost">
-//               <h3 class="advantages__title">Персонализация стоимости</h3>
-//               <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-//             </li>
-//           </ul>
-//         </div>
-//       </a>
-//     </section>
+  .advantages__list {
+    width: 96%;
+  }
+
+  .advantages__item {
+    width: 46.6%;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    position: relative;
+    border-left: 2px solid #00B2FF;
+
+    &:hover {
+      background-color: #00B2FF;
+      color: #FFFFFF; //  не работает???
+    }
+
+    &:hover::before {
+      fill: #FFFFFF; //  не работает???
+    }
+
+    &--terms::before {
+      width: 29px;
+      height: 35px;
+      top: 24px;
+      left: 23px;
+    }
+
+    &--suppliers::before {
+      width: 35px;
+      height: 35px;
+      top: 20px;
+      left: 23px;
+    }
+
+    &--confidence::before {
+      width: 36px;
+      height: 30px;
+      top: 25px;
+      left: 20px;
+    }
+
+    &--cost::before {
+      width: 35px;
+      height: 35px;
+      top: 23px;
+      left: 26px;
+    }
+  }
+
+  .advantages__item:first-child,
+  .advantages__item:nth-child(2) {
+    min-height: 306px;
+  }
+
+  .advantages__item:nth-child(3),
+  .advantages__item:nth-child(4) {
+    min-height: 232px;
+  }
+
+  .advantages__title {
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 6.6%;
+    padding-top: 66px;
+    padding-bottom: 9px;
+  }
+
+  .advantages__description {
+    margin: 0;
+    padding: 0;
+    padding-left: 6.6%;
+    padding-bottom: 19px;
+    width: 93.3%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages__list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .advantages__item {
+    width: 90.6%;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 5px;
+    border-left: 2px solid #00B2FF;
+
+    &:hover {
+      background-color: #00B2FF;
+      color: #FFFFFF; //  не работает???
+    }
+
+    &:hover::before {
+      fill: #FFFFFF; //  не работает???
+    }
+
+    &--terms::before {
+      width: 29px;
+      height: 35px;
+      top: 24px;
+      left: 23px;
+    }
+
+    &--suppliers::before {
+      width: 35px;
+      height: 35px;
+      top: 20px;
+      left: 23px;
+    }
+
+    &--confidence::before {
+      width: 36px;
+      height: 30px;
+      top: 25px;
+      left: 20px;
+    }
+
+    &--cost::before {
+      width: 35px;
+      height: 35px;
+      top: 23px;
+      left: 26px;
+    }
+  }
+
+  .advantages__item:first-child,
+  .advantages__item:nth-child(2) {
+    min-height: 310px;
+  }
+
+  .advantages__item:nth-child(3) {
+    min-height: 232px;
+  }
+
+  .advantages__item:nth-child(4) {
+    min-height: 244px;
+  }
+
+  .advantages__title {
+    width: 90%;
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 140.62%;
+    margin: 0;
+    padding: 0;
+    padding-left: 8.6%;
+    padding-top: 71px;
+    padding-bottom: 8px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__title,
+  .advantages__item:nth-child(4) .advantages__title {
+    padding-top: 64px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__title{
+    padding-bottom: 0px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__description{
+    margin-top: -7px;
+  }
+
+  .advantages__item:nth-child(4) .advantages__title {
+    padding-bottom: 14px;
+  }
+
+  .advantages__description {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+    padding-bottom: 18px;
+    width: 98%;
+  }
+}
