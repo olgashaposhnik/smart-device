@@ -4,8 +4,6 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  // padding-left: 250px;
-  // padding-right: 250px;
   color: #FFFFFF;
   background: #00B2FF;
   position: relative;
@@ -20,39 +18,12 @@
     position: absolute;
     background-image: url("../img/triangles-right-write.svg");
     background-repeat: no-repeat;
-    // width: 343px;
-    // height: 650px;
     width: 18%;
     height: 86%;
     top: 6%;
     right: 0%;
     z-index: 0;
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/paper_airplane.png");
-  //   background-position: center;
-  //   width: 511px;
-  //   height: 288px;
-  //   top: 160px;
-  //   left: 351px;
-  //   z-index: 2;
-  // }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/triangles-left-write.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   width: 611px;
-  //   height: 487px;
-  //   top: 93px;
-  //   left: 196px;
-  //   z-index: 0;
-  // }
 }
 
 
@@ -78,25 +49,8 @@
   padding: 0;
   margin: 0;
   padding-top: 90px;
-  // padding-left: 721px;
   padding-bottom: 10px;
-  // background-image: url("../img/triangles-right-write.svg");
-  // background-repeat: no-repeat;
-  // background-position: bottom 50px right 100px;;
   position: relative;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/triangles-right-write.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   width: 366px;
-  //   height: 549px;
-  //   top: 92px;
-  //   left: 1314px;
-  //   z-index: 1;
-  // }
 }
 
 .consult__text {
@@ -108,23 +62,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  // padding-left: 725px;
   padding-bottom: 52px;
-  // position: relative;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url("../img/triangle-right-write-bottom.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   width: 373px;
-  //   height: 373px;
-  //   top: 160px;
-  //   left: 351px;
-  //   z-index: 2;
-  // }
 }
 
 .consult__form {
@@ -132,7 +70,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // margin-left: 725px;
 }
 
 .consult__form input {
@@ -153,9 +90,8 @@
   }
 }
 
-.consult__form--name {
+.consult__name {
   color: #FFFFFF;
-  // width: 270px;
   width: 47.4%;
   margin-right: 5%;
   padding-top: 9px;
@@ -163,21 +99,21 @@
   padding-left: 14px;
 }
 
-.consult__form--phone {
+.consult__phone {
   width: 47.4%;
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 15px;
 }
 
-.consult__form--question {
+.consult__question {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 122px;
   padding-left: 15px;
 }
 
-.consult__form--button {
+.consult__button {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -197,20 +133,19 @@
   margin-bottom: 114px;
 }
 
-.consult__form--checkbox {
+.consult__checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.consult__form--checkbox+label {
+.consult__checkbox+label {
   display: inline-flex;
-  // align-items: baseline;
   user-select: none;
   padding-top: 10px;
 }
 
-.consult__form--checkbox+label::before {
+.consult__checkbox+label::before {
   content: '';
   display: inline-block;
   width: 14px;
@@ -223,12 +158,12 @@
   background-size: 50% 50%;
 }
 
-.consult__form--checkbox:checked+label::before {
+.consult__checkbox:checked+label::before {
   background-image: url("../img/checkbox.svg");
   margin-right: 17px;
 }
 
-.consult__form--label {
+.consult__label {
   width: 47.4%;
   padding-left: 39px;
   font-family: "PTMono-Regular", "Arial", sans-serif;
@@ -240,17 +175,239 @@
   padding-left: 38px;
 }
 
-// <section class="consult">
-//       <a name="consult">
-//         <h2 class="consult__header">Остались вопросы? Задайте их нам!</h2>
-//         <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
-//         <form class="consult__form" action="index.html" method="post">
-//           <input class="consult__form--name" type="text" size="270" placeholder="Имя">
-//           <input class="consult__form--phone" type="text" size="269" placeholder="Телефон">
-//           <input class="consult__form--question" type="text" size="570" placeholder="Ваш вопрос">
-//           <button type="button" class="consult__form--button">Задать вопрос</button>
-//           <input class="consult__form--checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
-// <label for="agree">Я согласен на обработку персональных данных</label>
-//         </form>
-//       </a>
-//     </section>
+@media (max-width: $tablet-width) {
+  .consult {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    background-image: none;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .consult__wrapper {
+    width: 76.6%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+  }
+
+  .consult__header {
+    font-size: 32px;
+    line-height: 140.62%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 17px;
+  }
+
+  .consult__text {
+    padding-bottom: 56px;
+  }
+
+  .consult__form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .consult__form input {
+    margin-bottom: 43px;
+
+    &::placeholder {
+      color: #FFFFFF;
+    }
+  }
+
+  .consult__name {
+    color: #FFFFFF;
+    width: 47.4%;
+    margin-right: 5%;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+  }
+
+  .consult__phone {
+    width: 47.4%;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .consult__question {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 122px;
+    padding-left: 15px;
+  }
+
+  .consult__button {
+    margin-top: 5px;
+    margin-bottom: 104px;
+  }
+
+  .consult__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .consult__checkbox+label {
+    padding-top: 14px;
+  }
+
+  .consult__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .consult__checkbox:checked+label::before {
+    background-image: url("../img/checkbox.svg");
+    margin-right: 17px;
+  }
+
+  .consult__label {
+    padding-left: 42px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .consult {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    background-image: none;
+    z-index: 2;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .consult__wrapper {
+    width: 91%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+  }
+
+  .consult__header {
+    font-size: 28px;
+    line-height: 140.62%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 13px;
+  }
+
+  .consult__text {
+    padding-bottom: 27px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .consult__form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .consult__form input {
+    margin-bottom: 36px;
+
+    &::placeholder {
+      color: #FFFFFF;
+    }
+  }
+
+  .consult__name {
+    color: #FFFFFF;
+    width: 100%;
+    margin-right: 0%;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+  }
+
+  .consult__phone {
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .consult__question {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 68px;
+    padding-left: 15px;
+  }
+
+  .consult__button {
+    width: 100%;
+    margin-top: -7px;
+    margin-bottom: 19px;
+  }
+
+  .consult__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .consult__checkbox+label {
+    padding-top: 14px;
+  }
+
+  .consult__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .consult__checkbox:checked+label::before {
+    background-image: url("../img/checkbox.svg");
+    margin-right: 17px;
+  }
+
+  .consult__label {
+    padding-left: 0px;
+    width: 80%;
+    padding-bottom: 41px;
+  }
+}

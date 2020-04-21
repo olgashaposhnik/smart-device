@@ -39,6 +39,14 @@
   width: 89%;
 }
 
+.about-company__text--tablet {
+  display: none;
+}
+
+.about-company__text--dektop {
+  display: block;
+}
+
 .about-company__button {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-style: normal;
@@ -100,6 +108,16 @@
     text-overflow: ellipsis;
   }
 
+  .about-company__text--tablet {
+    display: block;
+    width: 97%;
+    padding-bottom: 23px;
+  }
+
+  .about-company__text--dektop {
+    display: none;
+  }
+
   .about-company__button {
     background-color: transparent;
     margin-left: 27.6%;
@@ -144,6 +162,15 @@
     // max-height: 109px;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .about-company__text--tablet {
+    display: block;
+    padding-bottom: 13px;
+  }
+
+  .about-company__text--dektop {
+    display: none;
   }
 
   .about-company__button {

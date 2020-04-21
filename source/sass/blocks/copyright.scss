@@ -56,7 +56,63 @@
 }
 
 @media (max-width: $tablet-width) {
-  
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 13.3%;
+    padding-left: 13.1%;
+    // justify-content: space-between;
+    font-family: "PTMono-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1B2D37;
+    opacity: 0.5;
+  }
+
+  .copyright__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    &--rights {
+      // width: 204px;
+      width: 14.5%;
+      margin-right: 20px;
+      text-align: left;
+    }
+
+    &--year {
+      // width: 355px;
+      width: 25.1%;
+      text-align: left;
+      margin-right: 20px;
+      order: 2;
+    }
+
+    &--conditions {
+      // width: 319px;
+      width: 41.1%;
+      text-align: left;
+      margin-right: 20px;
+    }
+  }
+
+  .copyright__link {
+    text-align: right;
+    // width: 455px;
+    // width: 41.1%;
+    margin-left: 20px;
+  }
 }
 
 // <div class="page-footer__copyright copyright">

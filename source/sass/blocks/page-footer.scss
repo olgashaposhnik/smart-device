@@ -14,28 +14,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  // margin: 0 auto;
   padding: 0;
-  // padding-right: 255px;
-  // padding-left: 252px;
   padding-right: 13.3%;
   padding-left: 13.1%;
   padding-bottom: 35px;
   justify-content: space-between;
   border-bottom: 1px solid rgba(98,105,98,0.2);
   position: relative;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   // background-image: url("../img/phone-call.png");
-  //   // background-repeat: no-repeat;
-  //   opacity: 0.2;
-  //   // border: 1px solid rgba(98,105,98,0.2);
-
-  //   bottom: 0px;
-  //   left: 0px;
-  // }
 }
 
 .page-footer__wrap{
@@ -52,14 +37,6 @@
   flex-direction: row;
   align-content: flex-start;
   width: 250px;
-
-  // &:hover {
-  //   opacity: 0.8;
-  // }
-
-  // &:active {
-  //   opacity: 0.6;
-  // }
 }
 
 .page-footer__logo-image {
@@ -93,62 +70,77 @@
   margin: 0;
 }
 
-// <footer class="page-footer">
-// <div class="page-footer__wrapper">
-//   <a class="page-footer__logo">
-//     <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="52" height="52" alt="Печатные платы «Smart Device»">
-//     <div class="page-footer__logo-text">Smart Device</div>
-//     <div class="page-footer__logo-explanation">умные технологии</div>
-//   </a>
-//   <div class="page-footer__social social">
-//     <ul class="social__list">
-//       <li class="social__item">
-//         <a class="social__link social__link--facebook" href=#></a>
-//       </li>
-//       <li class="social__item">
-//         <a class="social__link social__link--ok" href=#></a>
-//       </li>
-//       <li class="social__item">
-//         <a class="social__link social__link--vk" href=#></a>
-//       </li>
-//     </ul>
-//   </div>
-//   <nav class="page-footer__navigation navigation">Разделы сайта
-//     <div class="navigation__wrapper">
-//       <ul class="navigation__list">
-//         <li class="navigation-list__item">
-//           <a href="#about">О компании</a>
-//         </li>
-//         <li class="navigation-list__item">
-//           <a href="#services">Продукты</a>
-//         </li>
-//         <li class="navigation-list__item">
-//           <a href="#manufacture">Производство печатных плат</a>
-//         </li>
-//         <li class="navigation-list__item">
-//           <a href="#installation">Монтаж печатных плат</a>
-//         </li>
-//         <li class="navigation-list__item">
-//           <a href="#catalog">Комплектующие</a>
-//         </li>
-//         <li class="navigation-list__item">
-//           <a href="#delivery">Доставка</a>
-//         </li>
-//         <li class="navigation-list__item">
-//           <a href="#contacts">Контакты</a>
-//         </li>
-//       </ul>
-//     </div>
-//   </nav>
-//   <div class="page-footer__contacts footer-contacts">
-//     <b class="footer-contacts__text">Наш офис</b>
-//     <p class="footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10 +7 (495) 589-40-50 +7 (925) 003-87-67 +7 (926) 926-080-79</p>
-//   </div>
-// </div>
-// <div class="page-footer__copyright copyright">
-//   <p class="copyright__text">Все права защищены</p>
-//   <p class="copyright__text">1999-2018 SD Service Devices</p>
-//   <p class="copyright__text">Условия конфиденциальности</p>
-//   <a class="copyright__link" href="#">Developed by wow studio</a>
-// </div>
-// </footer>
+@media (max-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+
+    background: #FAFAFA;
+  }
+
+  .page-footer__wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 93%;
+    padding: 0;
+    // padding-right: 3.2%;
+    // padding-left: 3.2%;
+    padding-bottom: 35px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(98,105,98,0.2);
+    position: relative;
+  }
+
+  .page-footer__wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 250px;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 65px;
+  }
+
+  .page-footer__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 16px;
+    padding-top: 69px;
+  }
+
+  .page-footer__logo-text {
+    font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #203C42;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .page-footer__logo-explanation {
+    font-family: "Roboto-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #788891;
+    margin: 0;
+  }
+}

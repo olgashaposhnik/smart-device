@@ -104,43 +104,33 @@
   }
 
   .services__header{
-    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 51px;
-    color: #FFFFFF;
-    width: 61.98%;
+    font-size: 32px;
+    line-height: 140.62%;
+    width: 85%;
     padding: 0;
-    margin: 0 auto;
-    padding-top: 88px;
-    padding-left: 0.5%;
-    padding-bottom: 52px;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 3.1%;
+    padding-bottom: 51px;
   }
 
   .services__list {
-    list-style: none;
-    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
-    width: 61.98%;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 126px;
+    padding-bottom: 32px;
   }
 
   .services__item {
-    width: 31.1%;
+    width: 715px;
+    padding: 0;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-left: 3.4%;
-    padding-right: 15%;
-    padding-bottom: 42.9%;
+    padding-top: 40px;
+    padding-left: 5.5%;
+    padding-right: 65%;
+    padding-bottom: 156px;
+    margin-bottom: 46px;
     position: relative;
 
     &::after {
@@ -154,8 +144,6 @@
       right: 0px;
       z-index: 2;
     }
-
-    position: relative;
 
     &::before {
       content: "";
@@ -171,22 +159,112 @@
     }
 
     &--manufacture {
-      background-image: url("../img/service1.png");
+      background-image: url("../img/service1-tablet.png");
       background-position: center;
       background-repeat: no-repeat;
     }
 
     &--installation {
-      background-image: url("../img/service2.png");
+      background-image: url("../img/service2-tablet.png");
       background-position: center;
       background-repeat: no-repeat;
     }
 
     &--catalog {
-      background-image: url("../img/service3.png");
+      background-image: url("../img/service3-tablet.png");
       background-position: center;
       background-repeat: no-repeat;
+      padding-top: 50px;
+      padding-bottom: 146px;
     }
   }
 }
 
+@media (max-width: $mobile-width) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #1B2D37;
+  }
+
+  .services__header{
+    font-size: 28px;
+    line-height: 140.62%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 51px;
+    padding-left: 8%;
+    padding-bottom: 23px;
+  }
+
+  .services__list {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 53px;
+  }
+
+  .services__item {
+    width: 290px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-left: 10.9%;
+    padding-right: 26%;
+    padding-bottom: 194px;
+    margin-bottom: -7px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/service-square.svg");
+      background-position: center;
+      width: 63px;
+      height: 63px;
+      bottom: 18px;
+      right: 0px;
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/service-vector.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 8px;
+      bottom: 45px;
+      right: 22px;
+      z-index: 3;
+    }
+
+    &--manufacture {
+      background-image: url("../img/service1-mobile.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--installation {
+      background-image: url("../img/service2-mobile.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--catalog {
+      background-image: url("../img/service3-mobile.png");
+      background-position: top 19px right 0px;
+      background-repeat: no-repeat;
+      padding-top: 49px;
+      padding-bottom: 184px;
+    }
+  }
+}
