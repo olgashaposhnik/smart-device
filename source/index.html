@@ -93,8 +93,6 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__wrap">
         <a href="#" class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logotype.svg" width="52" height="52" alt="Печатные платы «Smart Device»">
           <div class="page-footer__logo-wrapper">
@@ -103,65 +101,133 @@
           </div>
         </a>
         <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"></a>
+          <ul class="page-footer__social__list social__list">
+            <li class="page-footer__social__item social__item">
+              <a class="page-footer__social__link page-footer__social__link--facebook social__link social__link--facebook" href="#"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--ok" href="#"></a>
+            <li class="page-footer__social__item social__item">
+              <a class="page-footer__social__link page-footer__social__link--ok social__link social__link--ok" href="#"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#"></a>
+            <li class="page-footer__social__item social__item">
+              <a class="page-footer__social__link page-footer__social__link--vk social__link social__link--vk" href="#"></a>
             </li>
           </ul>
         </div>
-      </div>
       <nav class="page-footer__navigation navigation">
-        <h3 class="navigation__header">Разделы сайта</h3>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list__left">
-            <li class="navigation__item">
+        <h3 class="page-footer__navigation__header navigation__header">Разделы сайта</h3>
+        <button class="page-footer__accordion navigation__accordion accordion">Разделы сайта</button>
+        <div class="page-footer__navigation__wrapper navigation__wrapper">
+          <ul class="page-footer__navigation__list__left navigation__list__left">
+            <li class="page-footer__navigation__item navigation__item">
               <a href="#about">О компании</a>
             </li>
-            <li class="navigation__item">
+            <li class="page-footer__navigation__item navigation__item">
               <a href="#services">Продукты</a>
             </li>
-            <li class="navigation__item">
+            <li class="page-footer__navigation__item navigation__item">
               <a href="#manufacture">Производство печатных плат</a>
             </li>
-            <li class="navigation__item">
+            <li class="page-footer__navigation__item navigation__item">
               <a href="#installation">Монтаж печатных плат</a>
             </li>
           </ul>
-          <ul class="navigation__list__right">
+          <ul class="page-footer__navigation__item navigation__list__right">
             <li class="navigation__item">
               <a href="#catalog">Комплектующие</a>
             </li>
-            <li class="navigation__item">
+            <li class="page-footer__navigation__item navigation__item">
               <a href="#delivery">Доставка</a>
             </li>
-            <li class="navigation__item">
+            <li class="page-footer__navigation__item navigation__item">
               <a href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="page-footer__contacts footer-contacts">
-        <h3 class="footer-contacts__header">Наш офис</h3>
-        <p class="footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10</p>
-        <p class="footer-contacts__text"><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
-        <p class="footer-contacts__text"><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
-        <p class="footer-contacts__text"><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
+        <h3 class="page-footer__contacts__header footer-contacts__header">Наш офис</h3>
+        <button class="page-footer__accordion footer-contacts__accordion accordion">Разделы сайта</button>
+        <p class="page-footer__contacts__text footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10</p>
+        <p class="page-footer__contacts__text footer-contacts__text"><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
+        <p class="page-footer__contacts__text footer-contacts__text"><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
+        <p class="page-footer__contacts__text footer-contacts__text"><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
       </div>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text copyright__text--rights">Все права защищены</p>
-      <p class="copyright__text copyright__text--year">1999-2018 SD Service Devices</p>
-      <p class="copyright__text copyright__text--conditions">Условия конфиденциальности</p>
-      <a class="copyright__link" href="#">Developed by wow studio</a>
-    </div>
+      <p class="page-footer__rights copyright__text copyright__text--rights">Все права защищены</p>
+      <p class="page-footer__year copyright__text copyright__text--year">1999-2018 SD Service Devices</p>
+      <p class="page-footer__conditions copyright__text copyright__text--conditions">Условия конфиденциальности</p>
+      <a href="#" class="page-footer__link copyright__link" href="#">Developed by wow studio</a>
   </footer>
   <script src="./js/script.js">
   </script>
 </body>
 </html>
+
+<!-- <footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__wrap">
+      <a href="#" class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logotype.svg" width="52" height="52" alt="Печатные платы «Smart Device»">
+        <div class="page-footer__logo-wrapper">
+          <p class="page-footer__logo-text">Service Device</p>
+          <p class="page-footer__logo-explanation">умные технологии</p>
+        </div>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="page-footer__navigation navigation">
+      <h3 class="navigation__header">Разделы сайта</h3>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list__left">
+          <li class="navigation__item">
+            <a href="#about">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#services">Продукты</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#manufacture">Производство печатных плат</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#installation">Монтаж печатных плат</a>
+          </li>
+        </ul>
+        <ul class="navigation__list__right">
+          <li class="navigation__item">
+            <a href="#catalog">Комплектующие</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#delivery">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-footer__contacts footer-contacts">
+      <h3 class="footer-contacts__header">Наш офис</h3>
+      <p class="footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10</p>
+      <p class="footer-contacts__text"><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
+      <p class="footer-contacts__text"><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
+      <p class="footer-contacts__text"><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
+    </div>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <p class="copyright__text copyright__text--rights">Все права защищены</p>
+    <p class="copyright__text copyright__text--year">1999-2018 SD Service Devices</p>
+    <p class="copyright__text copyright__text--conditions">Условия конфиденциальности</p>
+    <a class="copyright__link" href="#">Developed by wow studio</a>
+  </div>
+</footer> -->

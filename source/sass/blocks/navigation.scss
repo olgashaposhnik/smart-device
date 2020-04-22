@@ -5,9 +5,10 @@
   margin: 0;
   padding: 0;
   padding-top: 65px;
-  padding-left: 11px;
-  // width: 505px;
-  width: 35.8%;
+  // padding-left: 139px;
+  padding-left: 12.2%;
+  width: 571px;
+  width: 51.1%;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -51,47 +52,178 @@
   flex-wrap: wrap;
 }
 
-
 .navigation__list__left,
 .navigation__list__right {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .navigation__list__left {
-  width: 62%;
+  width: 309px;
+  // width: 62%;
 }
 
 .navigation__item {
   padding-left: 0px;
 }
 
+@media (max-width: $tablet-width) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-top: 65px;
+    padding-left: 0.2%;
+    padding-bottom: 43px;
+    width: 571px;
+    width: 48.5%;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B2D37;
+  }
 
-// <nav class="page-footer__navigation navigation">Разделы сайта
-//         <div class="navigation__wrapper">
-//           <ul class="navigation__list">
-//             <li class="navigation__item">
-//               <a href="#about">О компании</a>
-//             </li>
-//             <li class="navigation__item">
-//               <a href="#services">Продукты</a>
-//             </li>
-//             <li class="navigation__item">
-//               <a href="#manufacture">Производство печатных плат</a>
-//             </li>
-//             <li class="navigation__item">
-//               <a href="#installation">Монтаж печатных плат</a>
-//             </li>
-//             <li class="navigation__item">
-//               <a href="#catalog">Комплектующие</a>
-//             </li>
-//             <li class="navigation__item">
-//               <a href="#delivery">Доставка</a>
-//             </li>
-//             <li class="navigation__item">
-//               <a href="#contacts">Контакты</a>
-//             </li>
-//           </ul>
-//         </div>
-//       </nav>
+  .navigation__header {
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation__wrapper {
+    font-family: "PTMono-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1B2D37;
+    opacity: 0.5;
+    text-transform: none;
+    list-style: none;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    margin-left: -2px;
+    // height: 126px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .navigation__list__left,
+  .navigation__list__right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .navigation__list__left {
+    width: 309px;
+    // width: 62%;
+  }
+
+  .navigation__item {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    margin-top: 171px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+    width: 571px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B2D37;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(98,105,98,0.2);
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .navigation__header {
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+
+  .navigation__wrapper {
+    font-family: "PTMono-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1B2D37;
+    opacity: 0.5;
+    text-transform: none;
+    list-style: none;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-left: -2px;
+    // height: 126px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .navigation__list__left,
+  .navigation__list__right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .navigation__list__left {
+    width: 309px;
+    // width: 62%;
+  }
+
+  .navigation__item {
+    padding-left: 0px;
+  }
+}

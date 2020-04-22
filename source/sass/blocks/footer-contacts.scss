@@ -1,12 +1,16 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin: 0;
   padding: 0;
   color: #1B2D37;
   padding-top: 65px;
-  width: 23.6%;
+  // padding-left: 257px;
+  padding-left: 7.3%;
+  width: 592px;
+  width: 31.2%;
+  padding-bottom: 59px;
 }
 
 .footer-contacts__header{
@@ -34,11 +38,95 @@
   margin: 0;
 }
 
+@media (max-width: $tablet-width) {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    color: #1B2D37;
+    padding-top: 65px;
+    // padding-left: 257px;
+    width: 47.8%;
+    padding-bottom: 59px;
+  }
 
-// <div class="page-footer__contacts footer-contacts">
-//         <h3 class="footer-contacts__header">Наш офис</h3>
-//         <p class="footer-contacts__text">г. Мытищи, Олимпийский проспект, д.10</p>
-//         <p class="footer-contacts__text"><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
-//         <p class="footer-contacts__text"><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
-//         <p class="footer-contacts__text"><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
-//       </div>
+  .footer-contacts__header{
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  .footer-contacts__text {
+    font-family: "PTMono-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    color: #1B2D37;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 25px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(98,105,98,0.2);
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .footer-contacts__header{
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+
+  .footer-contacts__text {
+    font-family: "PTMono-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+    width: 99%;
+  }
+}
