@@ -1,0 +1,78 @@
+.accordion {
+
+}
+
+.accordion__panel {
+  max-height: 0;
+  overflow: visible;
+}
+
+@media (max-width: $tablet-width) {
+  .accordion {
+
+  }
+
+  .accordion__panel {
+    max-height: 0;
+    overflow: visible;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .accordion {
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    position: relative;
+    transition: 0.5s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/menu-closed.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      right: 1px;
+    }
+  }
+
+  .accordion__panel {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .accordion__active {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/menu-opened.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      right: 0px;
+    }
+  }
+}
+
