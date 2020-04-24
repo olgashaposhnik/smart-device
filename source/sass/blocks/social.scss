@@ -8,6 +8,7 @@
   // padding-top: 54px;
   position: absolute;
   top: 171px;
+  z-index: 10;
 }
 
 .social__list {
@@ -28,12 +29,20 @@
   padding: 0;
 
   &:hover {
-    // background-color: ;
+    opacity: 1;
   }
 
   &:active {
     opacity: 0.6;
   }
+}
+
+.social__item svg {
+  fill: #CDCDCD;
+}
+
+.social__item svg:hover {
+  fill: #00B2FF;
 }
 
 .social__item:nth-child(4n) {
@@ -149,38 +158,38 @@
       height: 27px;
     }
 
-    &--facebook::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/fb.svg");
-      background-position: center;
-      width: 27px;
-      height: 27px;
-      top: 0px;
-      left: 0px;
-    }
+    // &--facebook::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/fb.svg");
+    //   background-position: center;
+    //   width: 27px;
+    //   height: 27px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
 
-    &--ok::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/ok.svg");
-      background-position: center;
-      width: 27px;
-      height: 26px;
-      top: 0px;
-      left: 0px;
-    }
+    // &--ok::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/ok.svg");
+    //   background-position: center;
+    //   width: 27px;
+    //   height: 26px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
 
-    &--vk::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/vk.svg");
-      background-position: center;
-      width: 27px;
-      height: 25px;
-      top: 0px;
-      left: 0px;
-    }
+    // &--vk::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/vk.svg");
+    //   background-position: center;
+    //   width: 27px;
+    //   height: 25px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
   }
 }
 
@@ -196,6 +205,8 @@
     padding-right: 4.7%;
     margin-top: -86px;
     position: relative;
+    margin-top: -139px;
+    z-index: 10;
   }
 
   .social__list {
@@ -240,37 +251,37 @@
       height: 27px;
     }
 
-    &--facebook::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/fb.svg");
-      background-position: center;
-      width: 27px;
-      height: 27px;
-      top: 0px;
-      left: 0px;
-    }
+    // &--facebook::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/fb.svg");
+    //   background-position: center;
+    //   width: 27px;
+    //   height: 27px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
 
-    &--ok::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/ok.svg");
-      background-position: center;
-      width: 27px;
-      height: 26px;
-      top: 0px;
-      left: 0px;
-    }
+    // &--ok::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/ok.svg");
+    //   background-position: center;
+    //   width: 27px;
+    //   height: 26px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
 
-    &--vk::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/vk.svg");
-      background-position: center;
-      width: 27px;
-      height: 25px;
-      top: 0px;
-      left: 0px;
-    }
+    // &--vk::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/vk.svg");
+    //   background-position: center;
+    //   width: 27px;
+    //   height: 25px;
+    //   top: 0px;
+    //   left: 0px;
+    // }
   }
 }

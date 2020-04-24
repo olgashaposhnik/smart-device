@@ -49,58 +49,48 @@
     background-color: #00B2FF;
   }
 
-  &:hover::before {
-    fill: #FFFFFF; //  не работает???
+  & svg {
+    fill: #00B2FF;
   }
 
-  &--terms::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/terms.svg");
-    background-position: center;
+  &--terms svg {
     width: 29px;
     height: 35px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    background-repeat: no-repeat;
-    top: 40px;
-    left: 44px;
+    margin-top: 39px;
+    margin-left: 42px;
   }
 
-  &--suppliers::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/suppliers.svg");
-    background-position: center;
+  &--suppliers svg {
     width: 35px;
     height: 35px;
-    background-repeat: no-repeat;
-    top: 40px;
-    left: 44px;
+    margin-top: 39px;
+    margin-left: 42px;
   }
 
-  &--confidence::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/confidence.svg");
-    background-position: center;
-    width: 36px;
-    height: 31px;
-    background-repeat: no-repeat;
-    top: 42px;
-    left: 44px;
-  }
-
-  &--cost::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/cost.svg");
-    background-position: center;
+  &--suppliers svg {
     width: 35px;
     height: 35px;
-    background-repeat: no-repeat;
-    top: 39px;
-    left: 44px;
+    margin-top: 39px;
+    margin-left: 42px;
   }
+
+  &--confidence svg {
+    width: 35px;
+    height: 35px;
+    margin-top: 39px;
+    margin-left: 42px;
+  }
+
+  &--cost svg {
+    width: 35px;
+    height: 35px;
+    margin-top: 39px;
+    margin-left: 42px;
+  }
+}
+
+.advantages__item:hover svg {
+  fill: #FFFFFF;
 }
 
 .advantages__item:hover .advantages__title {
@@ -121,7 +111,7 @@
   margin: 0;
   padding: 0;
   padding-left: 44px;
-  padding-top: 93px;
+  padding-top: 15px;
   padding-bottom: 17px;
 }
 
@@ -175,39 +165,41 @@
 
     &:hover {
       background-color: #00B2FF;
-      color: #FFFFFF; //  не работает???
     }
 
-    &:hover::before {
-      fill: #FFFFFF; //  не работает???
-    }
-
-    &--terms::before {
+    &--terms svg {
       width: 29px;
       height: 35px;
-      top: 24px;
-      left: 23px;
+      margin-top: 24px;
+      margin-left: 23px;
     }
 
-    &--suppliers::before {
+    &--suppliers svg {
       width: 35px;
       height: 35px;
-      top: 20px;
-      left: 23px;
+      margin-top: 24px;
+      margin-left: 25px;
     }
 
-    &--confidence::before {
-      width: 36px;
-      height: 30px;
-      top: 25px;
-      left: 20px;
-    }
-
-    &--cost::before {
+    &--suppliers svg {
       width: 35px;
       height: 35px;
-      top: 23px;
-      left: 26px;
+      margin-top: 24px;
+      margin-left: 23px;
+    }
+
+    &--confidence svg {
+      width: 35px;
+      height: 35px;
+      margin-top: 24px;
+      margin-left: 23px;
+    }
+
+    &--cost svg {
+      width: 35px;
+      height: 35px;
+      margin-top: 24px;
+      margin-left: 23px;
     }
   }
 
@@ -226,7 +218,7 @@
     margin: 0;
     padding: 0;
     padding-left: 6.6%;
-    padding-top: 66px;
+    padding-top: 2px;
     padding-bottom: 9px;
   }
 
@@ -268,39 +260,6 @@
 
     &:hover {
       background-color: #00B2FF;
-      color: #FFFFFF; //  не работает???
-    }
-
-    &:hover::before {
-      fill: #FFFFFF; //  не работает???
-    }
-
-    &--terms::before {
-      width: 29px;
-      height: 35px;
-      top: 24px;
-      left: 23px;
-    }
-
-    &--suppliers::before {
-      width: 35px;
-      height: 35px;
-      top: 20px;
-      left: 23px;
-    }
-
-    &--confidence::before {
-      width: 36px;
-      height: 30px;
-      top: 25px;
-      left: 20px;
-    }
-
-    &--cost::before {
-      width: 35px;
-      height: 35px;
-      top: 23px;
-      left: 26px;
     }
   }
 
@@ -325,13 +284,13 @@
     margin: 0;
     padding: 0;
     padding-left: 8.6%;
-    padding-top: 71px;
+    padding-top: 8px;
     padding-bottom: 8px;
   }
 
   .advantages__item:nth-child(3) .advantages__title,
   .advantages__item:nth-child(4) .advantages__title {
-    padding-top: 64px;
+    padding-top: 1px;
   }
 
   .advantages__item:nth-child(3) .advantages__title{
