@@ -47,7 +47,6 @@
 
   &:hover {
     background-color: #00B2FF;
-    color: #FFFFFF; //  не работает???
   }
 
   &:hover::before {
@@ -102,6 +101,14 @@
     top: 39px;
     left: 44px;
   }
+}
+
+.advantages__item:hover .advantages__title {
+  color: #FFFFFF;
+}
+
+.advantages__item:hover .advantages__description {
+  color: #FFFFFF;
 }
 
 .advantages__title {

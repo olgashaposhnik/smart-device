@@ -69,6 +69,14 @@
 
 .navigation__item {
   padding-left: 0px;
+
+  &:hover {
+    color: #00B2FF;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: $tablet-width) {

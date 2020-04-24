@@ -1,13 +1,13 @@
 .accordion__panel {
-  max-height: 0;
-  overflow: visible;
+  // max-height: 0;
+  // overflow: visible;
 }
 
 @media (max-width: $tablet-width) {
-  .accordion__panel {
-    max-height: 0;
-    overflow: visible;
-  }
+  // .accordion__panel {
+  //   max-height: 0;
+  //   overflow: visible;
+  // }
 }
 
 @media (max-width: $mobile-width) {

@@ -5,9 +5,9 @@
   height: 27px;
   margin: 0;
   padding: 0;
-  padding-top: 54px;
+  // padding-top: 54px;
   position: absolute;
-  top: 117px;
+  top: 171px;
 }
 
 .social__list {
@@ -26,6 +26,14 @@
 .social__item {
   margin: 0;
   padding: 0;
+
+  &:hover {
+    // background-color: ;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social__item:nth-child(4n) {
@@ -52,38 +60,38 @@
     height: 27px;
   }
 
-  &--facebook::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/fb.svg");
-    background-position: center;
-    width: 27px;
-    height: 27px;
-    top: 0px;
-    left: 0px;
-  }
+  // &--facebook::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../img/fb.svg");
+  //   background-position: center;
+  //   width: 27px;
+  //   height: 27px;
+  //   top: 0px;
+  //   left: 0px;
+  // }
 
-  &--ok::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/ok.svg");
-    background-position: center;
-    width: 27px;
-    height: 26px;
-    top: 0px;
-    left: 0px;
-  }
+  // &--ok::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../img/ok.svg");
+  //   background-position: center;
+  //   width: 27px;
+  //   height: 26px;
+  //   top: 0px;
+  //   left: 0px;
+  // }
 
-  &--vk::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/vk.svg");
-    background-position: center;
-    width: 27px;
-    height: 25px;
-    top: 0px;
-    left: 0px;
-  }
+  // &--vk::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../img/vk.svg");
+  //   background-position: center;
+  //   width: 27px;
+  //   height: 25px;
+  //   top: 0px;
+  //   left: 0px;
+  // }
 }
 
 @media (max-width: $tablet-width) {
@@ -95,7 +103,7 @@
     height: 27px;
     margin: 0;
     padding: 0;
-    margin-top: -86px;
+    margin-top: -141px;
     position: relative;
   }
 

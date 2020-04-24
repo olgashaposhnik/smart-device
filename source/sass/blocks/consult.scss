@@ -26,7 +26,6 @@
   }
 }
 
-
 .consult__wrapper {
   width: 29.7%;
   margin: 0;
@@ -79,6 +78,7 @@
   font-size: 16px;
   line-height: 22px;
   box-sizing: border-box;
+  border: none;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   resize: none;
@@ -95,21 +95,21 @@
   width: 47.4%;
   margin-right: 5%;
   padding-top: 9px;
-  padding-bottom: 10px;
-  padding-left: 14px;
+  padding-bottom: 15px;
+  padding-left: 17px;
 }
 
 .consult__phone {
   width: 47.4%;
   padding-top: 9px;
   padding-bottom: 10px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .consult__question {
   width: 100%;
   padding-top: 12px;
-  padding-bottom: 122px;
+  padding-bottom: 125px;
   padding-left: 15px;
 }
 
@@ -131,6 +131,16 @@
   background-color: transparent;
   margin-left: 0;
   margin-bottom: 114px;
+
+  &:hover {
+    background: #FFFFFF;
+    color: #00B2FF;
+    border: 1px solid #00B2FF;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .consult__checkbox {
@@ -156,6 +166,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+  margin-right: 17px;
 }
 
 .consult__checkbox:checked+label::before {
@@ -223,7 +234,7 @@
   }
 
   .consult__form input {
-    margin-bottom: 43px;
+    margin-bottom: 47px;
 
     &::placeholder {
       color: #FFFFFF;
@@ -251,6 +262,7 @@
     padding-top: 12px;
     padding-bottom: 122px;
     padding-left: 15px;
+    margin-bottom: 47px;
   }
 
   .consult__button {
@@ -341,7 +353,7 @@
   }
 
   .consult__form input {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 
     &::placeholder {
       color: #FFFFFF;
@@ -352,29 +364,29 @@
     color: #FFFFFF;
     width: 100%;
     margin-right: 0%;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 14px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    padding-left: 17px;
   }
 
   .consult__phone {
     width: 100%;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 17px;
   }
 
   .consult__question {
     width: 100%;
     padding-top: 12px;
-    padding-bottom: 68px;
-    padding-left: 15px;
+    padding-bottom: 69px;
+    padding-left: 17px;
   }
 
   .consult__button {
     width: 100%;
-    margin-top: -7px;
-    margin-bottom: 19px;
+    margin-top: 0px;
+    margin-bottom: 18px;
   }
 
   .consult__checkbox {
