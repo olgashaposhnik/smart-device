@@ -88,15 +88,16 @@
   line-height: 19px;
   text-align: center;
   padding-top: 17px;
+  padding-bottom: 18px;
   margin-bottom: 275px;
   margin-left: 97px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   width: 407px;
   width: 52%;
-  height: 55px;
   background: #00B2FF;
   border-radius: 5px;
+  scroll-behavior: smooth;
 
   &:hover {
     color: #00B2FF;
@@ -184,7 +185,7 @@
   }
 
   .description-block__wrapper {
-    width: 83%;
+    width: 99%;
     position: relative;
     z-index: 4;
 
@@ -249,10 +250,12 @@
     // position: absolute;
     // width: 465px;
     // height: 340px;
-    margin-left: 9%;
-    margin-top: -29%;
+    margin-left: 8%;
+    margin-top: -28%;
     width: 334px;
     height: 337px;
+    width: 465px;
+    height: 340px;
     z-index: 2;
     overflow: hidden;
   }
@@ -357,8 +360,8 @@
     height: 220px;
     // left: -10px;
     // top: -12px;
-    left: 5%;
-    bottom: 68%;
+    left: 4.4%;
+    bottom: 60.9%;
     z-index: 2;
   }
 }
