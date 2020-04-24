@@ -1,17 +1,9 @@
-.accordion {
-
-}
-
 .accordion__panel {
   max-height: 0;
   overflow: visible;
 }
 
 @media (max-width: $tablet-width) {
-  .accordion {
-
-  }
-
   .accordion__panel {
     max-height: 0;
     overflow: visible;
