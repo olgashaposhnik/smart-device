@@ -1,5 +1,6 @@
+// Реализация аккордеона в подвале
+
 var acc = document.getElementsByClassName("accordion");
-console.log(acc)
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -14,17 +15,76 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-  // var navMain = document.querySelector('.main-nav');
-  // var navToggle = document.querySelector('.main-nav__toggle');
+// Реализация модального окна
 
-  // navMain.classList.remove('main-nav--nojs');
+var link = document.querySelector(".contacts__button");
 
-  // navToggle.addEventListener('click', function() {
-  //   if (navMain.classList.contains('main-nav--closed')) {
-  //     navMain.classList.remove('main-nav--closed');
-  //     navMain.classList.add('main-nav--opened');
-  //   } else {
-  //     navMain.classList.add('main-nav--closed');
-  //     navMain.classList.remove('main-nav--opened');
-  //   }
-  // });
+var popup = document.querySelector(".modal");
+var close = popup.querySelector(".modal__close");
+
+var form = popup.querySelector(".modal__form");
+var popupName = popup.querySelector("[name=name]");
+var phone = popup.querySelector("[name=phone]");
+var question = popup.querySelector("[name=question]");
+
+document.addEventListener("DOMContentLoaded", function(){ // запрещаем скролл страницы
+  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+  link.addEventListener('click',function(){
+    document.body.style.overflow = 'hidden';
+    link.style.marginLeft = scrollbar;
+  });
+  close.addEventListener('click',function(){
+    document.body.style.overflow = 'visible';
+    link.style.marginLeft = '0px';
+  });
+});
+
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("name");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal__show");
+
+  if (storage) {
+    name.value = storage;
+    phone.focus();
+  } else {
+    name.focus();
+  }
+});
+
+close.addEventListener("click", function (evt) {
+evt.preventDefault();
+popup.classList.remove("modal__show");
+popup.classList.remove("modal___error");
+});
+
+form.addEventListener("submit", function (evt) {
+  if (!name.value || !phone.value || !question.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal__error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal__error");
+    // console.log("������� ���, e-mail � ����� ������");
+  } else
+    if (isStorageSupport) {
+    localStorage.setItem("name", name.value);
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal__show")) {
+      popup.classList.remove("modal__show");
+      popup.classList.remove("modal__error");
+    }
+  }
+});

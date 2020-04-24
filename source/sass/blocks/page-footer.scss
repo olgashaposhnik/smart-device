@@ -34,7 +34,8 @@
 }
 
 .page-footer__logo-image {
-  margin-top: -83px;
+  // margin-top: -83px;
+  margin-top: 17px;
 }
 
 .page-footer__logo-wrapper {
@@ -73,7 +74,8 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  padding-top: 14px;
+  // padding-top: 14px;
+  padding-top: 113px;
   padding-bottom: 14px;
   align-items: center;
   text-align: left;
@@ -212,13 +214,14 @@
 
   .page-footer__conditions {
     width: 46.8%;
-    padding-top: 14px;
+    padding-top: 173px;
     padding-bottom: 24px;
   }
 
   .page-footer__link {
     width: 46.8%;
     text-align: right;
+    padding-top: 173px;
   }
 
   .page-footer__accordion {
