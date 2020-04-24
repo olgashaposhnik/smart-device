@@ -5,6 +5,7 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 312px;
+  overflow: hidden;
 
   background-color: #1B2D37;
   background-image: url("../img/background.png");
@@ -20,8 +21,11 @@
 .description-block__wrapper {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 48%;
+  min-width: 414px;
   position: relative;
+  z-index: 2;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -46,6 +50,8 @@
   text-transform: uppercase;
   margin: 0;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .description-block__slogan {
@@ -58,7 +64,7 @@
   padding-left: 97px;
   padding-bottom: 44px;
   padding-top: 21px;
-  width: 85%;
+  width: 100%;
   position: relative;
 
   &::before {
@@ -87,6 +93,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   width: 407px;
+  width: 52%;
   height: 55px;
   background: #00B2FF;
   border-radius: 5px;
@@ -130,11 +137,15 @@
 }
 
 .description-block__image {
-  margin-left: -120px;
-  margin-top: -54px;
+  position: relative;
   width: 705px;
   height: 515px;
-  z-index: 2;
+  margin-top: -54px;
+  margin-left: 2px;
+  // top: 56.5%;
+  // // right: 9.2%;
+  // left: 70%;
+  z-index: 0;
   overflow: hidden;
 }
 
