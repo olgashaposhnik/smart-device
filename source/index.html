@@ -29,7 +29,7 @@
   </header>
   <main class="page-main">
     <section class="description-block">
-      <div class="description-block__wrap">
+      <!-- <div class="description-block__wrap"> -->
         <div class="description-block__wrapper">
           <h1 class="description-block__header">Печатные платы</h1>
           <p class="description-block__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p>
@@ -37,12 +37,12 @@
           <a class="description-block__mobilelink" href="#consult">Бесплатная консультация</a>
           <a class="description-block__scroll" href="#advantages">Скролл вниз</a>
         </div>
-        <picture>
+        <!-- <picture>
           <source media="(max-width: 767px)" srcset="img/board-mobile.png">
           <source media="(max-width: 1023px)" srcset="img/board-tablet1.png">
           <img class="description-block__image" src="img/board.png" width="705" height="515" alt="«Smart Device»">
-        </picture>
-      </div>
+        </picture> -->
+      <!-- </div> -->
     </section>
     <section id="advantages" class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -117,7 +117,7 @@
           <label class="consult__label consult__label--name" for="name">Имя</label>
           <input aria-label="Введите Ваше имя" class="consult__name" type="text" name="name" placeholder="Имя">
           <label class="consult__label consult__label--phone" for="phone">Телефон</label>
-          <input aria-label="Введите Ваш телефон" class="consult__phone" type="text" name="phone" placeholder="Телефон">
+          <input aria-label="Введите Ваш телефон" class="consult__phone" type="tel" name="phone" placeholder="Телефон">
           <label class="consult__label consult__label--question" for="question">Ваш вопро</label>
           <input aria-label="Введите Ваш вопрос" class="consult__question" type="text" name="question" placeholder="Ваш вопрос">
           <button type="submit" class="consult__button">Задать вопрос</button>
@@ -214,7 +214,7 @@
         <label class="modal__label modal__label--name" for="name">Имя</label>
         <input class="modal__input modal__input--name" id="name" name="name" placeholder="Имя" type="text">
         <label class="modal__label modal__label--phone" for="phone">Телефон</label>
-        <input class="modal__input modal__input--phone" id="phone" name="phone" placeholder="Телефон" type="text">
+        <input class="modal__input modal__input--phone" id="phone" name="phone" placeholder="Телефон" type="tel">
         <label class="modal__label modal__label--question" for="question">Ваш вопрос</label>
         <input class="modal__input modal__input--question" id="question" name="question" placeholder="Ваш вопрос" type="text">
         <button class="modal__button" type="submit">Отправить</button>
