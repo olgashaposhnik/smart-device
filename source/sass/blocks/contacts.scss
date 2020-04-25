@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 619px;
+  width: 662px;
+  // width: 47%;
   padding: 0;
 
   font-family: "PTMono-Regular", "Arial", sans-serif;
@@ -14,48 +15,37 @@
 }
 
 .contacts__email {
-  padding-right: 8px;
-  position: relative;
   margin-top: 13px;
+
+  &:hover {
+    color: #00B2FF;
+  }
+
+  &:active {
+    opacity: 0.6;
+    color: #00B2FF;
+  }
+}
+
+.contacts__email__link {
+  position: relative;
+  padding-left: 43px;
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/envelope.png");
+    background-image: url("../img/envelope.svg");
     background-position: center;
     width: 19px;
     height: 14px;
     background-repeat: no-repeat;
     top: 2px;
-    right: 124px;
-  }
-
-  &:hover {
-    color: #00B2FF;
-  }
-
-  &:active {
-    opacity: 0.6;
-    color: #00B2FF;
+    right: 115px;
   }
 }
 
 .contacts__phone {
-  padding-right: 38px;
-  position: relative;
   margin-top: 13px;
-  padding-left: 102px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/phone-call.png");
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 18px;
-    top: 0px;
-    right: 226px;
-  }
 
   &:hover {
     color: #00B2FF;
@@ -67,7 +57,28 @@
   }
 }
 
+.contacts__phone__link {
+  position: relative;
+  padding-left: 50px;
+  margin-left: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/phone-call.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    top: 0px;
+    right: 190px;
+  }
+}
+
 .contacts__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -78,6 +89,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   width: 180px;
+  width: 9,4%;
   padding-top: 1px;
   padding-bottom: 1px;
   border: 1px solid #FFFFFF;
@@ -98,78 +110,50 @@
   }
 }
 
-.contacts__mobile {
-  display: none;
-}
-
 @media (max-width: $tablet-width) {
   .contacts {
-    width: 22.3%;
+    width: 15%;
     padding: 0;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   background-image: url("../img/mobile-menu.png");
-    //   width: 37px;
-    //   height: 13px;
-    //   top: 37px;
-    //   // right: 19%;
-    //   left: 76.5%;
-    // }
-  }
-
-  .contacts__mobile {
-    display: block;
-    background-image: url("../img/mobile-menu.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 37px;
-    height: 13px;
-    margin-top: 21px;
   }
 
   .contacts__email {
-    padding-right: 8px;
+    font-size: 0;
+    padding-right: 0px;
     position: relative;
     margin-top: 13px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/envelope.svg");
-      background-repeat: no-repeat;
-      width: 27px;
-      height: 18.67px;
-      top: 5px;
-      left: -3px;
-    }
   }
 
-  .contacts__email a {
-    display: none;
+  .contacts__email__link {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      width: 25.33px;
+      height: 18.67px;
+      top: -2px;
+      right: -17px;
+    }
   }
 
   .contacts__phone {
-    padding-right: 38px;
+    font-size: 0;
+    padding-right: 0px;
     position: relative;
     margin-top: 13px;
     padding-left: 0px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/phone-call-tablet.png");
-      background-repeat: no-repeat;
-      width: 24px;
-      height: 24px;
-      top: 3px;
-      right: 6px;
-    }
   }
 
-  .contacts__phone a {
-    display: none;
+  .contacts__phone__link {
+    position: relative;
+    padding-left: 24px;
+    margin-left: 24px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      top: -6px;
+      right: 4px;
+    }
   }
 
   .contacts__button {
@@ -179,70 +163,66 @@
 
 @media (max-width: $mobile-width) {
   .contacts {
-    width: 78%;
+    width: 30%;
     padding: 0;
+  }
+
+  .contacts__email {
+    padding-right: 0px;
+    margin-top: 13px;
 
     // &::before {
     //   content: "";
     //   position: absolute;
-    //   background-image: url("../img/mobile-menu.svg");
-    //   width: 37px;
-    //   height: 13px;
-    //   top: 27px;
-    //   right: 115px;
+    //   background-image: url("../img/envelope.svg");
+    //   width: 27px;
+    //   height: 18.67px;
+    //   top: 0%;
+    //   left: 0%;
     // }
   }
 
-  .contacts__mobile {
-    display: block;
-    background-image: url("../img/mobile-menu.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 37px;
-    height: 13px;
-    margin-top: 15px;
-  }
-
-  .contacts__email {
-    padding-right: 8px;
+  .contacts__email__link {
     position: relative;
-    margin-top: 13px;
+    padding-left: 30px;
 
     &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/envelope.svg");
-      width: 27px;
+      width: 25.33px;
       height: 18.67px;
-      top: 0%;
-      left: 0%;
+      top: -9px;
+      right: -11px;
     }
   }
 
-  .contacts__email a {
-    display: none;
-  }
-
   .contacts__phone {
-    padding-right: 38px;
+    padding-right: 0px;
     position: relative;
     margin-top: 13px;
     padding-left: 0px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/phone-call.svg");
-      background-repeat: no-repeat;
-      width: 24px;
-      height: 24px;
-      top: -4px;
-      right: -1px;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../img/phone-call.svg");
+    //   background-repeat: no-repeat;
+    //   width: 24px;
+    //   height: 24px;
+    //   top: -4px;
+    //   right: -1px;
+    // }
   }
 
-  .contacts__phone a {
-    display: none;
+  .contacts__phone__link {
+    position: relative;
+    padding-left: 24px;
+    margin-left: 24px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      top: -12px;
+      right: -2px;
+    }
   }
 
   .contacts__button {

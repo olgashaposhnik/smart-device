@@ -43,6 +43,14 @@
       height: 16px;
       right: 1px;
     }
+
+    &:hover {
+      color: #00B2FF;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .accordion__panel {

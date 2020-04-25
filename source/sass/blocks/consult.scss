@@ -71,6 +71,10 @@
   flex-wrap: wrap;
 }
 
+.consult__label {
+  font-size: 0;
+}
+
 .consult__form input {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
@@ -131,6 +135,7 @@
   background-color: transparent;
   margin-left: 0;
   margin-bottom: 114px;
+  cursor: pointer;
 
   &:hover {
     background: #FFFFFF;
@@ -167,6 +172,11 @@
   background-position: center center;
   background-size: 50% 50%;
   margin-right: 17px;
+  cursor: pointer;
+}
+
+.consult__checkbox:hover+label::before {
+  opacity: 0.6;
 }
 
 .consult__checkbox:checked+label::before {
@@ -174,7 +184,7 @@
   margin-right: 17px;
 }
 
-.consult__label {
+.consult__checkbox__label {
   width: 47.4%;
   padding-left: 39px;
   font-family: "PTMono-Regular", "Arial", sans-serif;
@@ -184,6 +194,11 @@
   line-height: 16px;
   color: rgba(255,255,255, 0.8);
   padding-left: 38px;
+  cursor: pointer;
+
+  &:hover{
+    color: #FFFFFF;
+  }
 }
 
 @media (max-width: $tablet-width) {

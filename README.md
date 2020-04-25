@@ -8,7 +8,7 @@
 Включает в себя:
  - автопрефиксер;
  - browser-sync;
- - минмизация css, html, js;
+ - минмизация css;
  - es-6 модули js;
  - babel;
  - html-include;

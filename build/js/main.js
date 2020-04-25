@@ -1,5 +1,4 @@
 // Реализация аккордеона в подвале
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -7,7 +6,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("accordion__active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
+    if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
@@ -27,13 +26,13 @@ var popupName = popup.querySelector("[name=name]");
 var phone = popup.querySelector("[name=phone]");
 var question = popup.querySelector("[name=question]");
 
-document.addEventListener("DOMContentLoaded", function(){ // запрещаем скролл страницы
+document.addEventListener("DOMContentLoaded", function() { // запрещаем скролл страницы
   var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-  link.addEventListener('click',function(){
+  link.addEventListener('click', function() {
     document.body.style.overflow = 'hidden';
     link.style.marginLeft = scrollbar;
   });
-  close.addEventListener('click',function(){
+  close.addEventListener('click', function() {
     document.body.style.overflow = 'visible';
     link.style.marginLeft = '0px';
   });
@@ -48,7 +47,7 @@ try {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function (evt) {
+link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal__show");
 
@@ -60,13 +59,13 @@ link.addEventListener("click", function (evt) {
   }
 });
 
-close.addEventListener("click", function (evt) {
-evt.preventDefault();
-popup.classList.remove("modal__show");
-popup.classList.remove("modal___error");
+close.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal__show");
+  popup.classList.remove("modal___error");
 });
 
-form.addEventListener("submit", function (evt) {
+form.addEventListener("submit", function(evt) {
   if (!name.value || !phone.value || !question.value) {
     evt.preventDefault();
     popup.classList.remove("modal__error");
@@ -74,17 +73,19 @@ form.addEventListener("submit", function (evt) {
     popup.classList.add("modal__error");
     // console.log("������� ���, e-mail � ����� ������");
   } else
-    if (isStorageSupport) {
+  if (isStorageSupport) {
     localStorage.setItem("name", name.value);
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal__show")) {
-      popup.classList.remove("modal__show");
-      popup.classList.remove("modal__error");
+window.addEventListener("keydown", function(evt) {
+  if (popup) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal__show")) {
+        popup.classList.remove("modal__show");
+        popup.classList.remove("modal__error");
+      }
     }
   }
 });

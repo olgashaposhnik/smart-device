@@ -15,28 +15,6 @@
   margin-left: -245px;
   margin-bottom: -302px;
   z-index: 150;
-
-  // position: fixed; /* фиксированное положение */
-  // top: 0;
-  // right: 0;
-  // bottom: 0;
-  // left: 0;
-  // // background: #E5E5E5; /* цвет фона */
-  // background: rgba(259,259,259, 0.1);
-  // z-index: 3;
-  // opacity: 0; /* по умолчанию модальное окно прозрачно */
-  // -webkit-transition: opacity 200ms ease-in;
-  // -moz-transition: opacity 200ms ease-in;
-  // transition: opacity 200ms ease-in; /* анимация перехода */
-  // pointer-events: none; /* элемент невидим для событий мыши */
-  // margin: 0;
-  // padding: 0;
-
-  // &:target {
-  //   opacity: 1; /* делаем окно видимым */
-  //   pointer-events: auto; /* элемент видим для событий мыши */
-  //   overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-  // }
 }
 
 .modal__window {
@@ -88,6 +66,10 @@
   padding-bottom: 35px;
 }
 
+.modal__label {
+  font-size: 0;
+}
+
 .modal__input{
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
@@ -135,6 +117,17 @@
   border-radius: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background: #FFFFFF;
+    color: #00B2FF;
+    border: 1px solid #00B2FF;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .modal__checkbox {
@@ -160,11 +153,16 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+  cursor: pointer;
 }
 
 .modal__checkbox:checked+label::before {
   background-image: url("../img/checkbox.svg");
   margin-right: 31px;
+}
+
+.modal__checkbox:hover+label::before {
+  opacity: 0.6;
 }
 
 .modal__checkbox__label {
@@ -177,6 +175,11 @@
   line-height: 16px;
   color: rgba(255,255,255, 0.8);
   padding-left: 0px;
+  cursor: pointer;
+
+  &:hover{
+    color: #FFFFFF;
+  }
 }
 
 .modal__show {
@@ -220,21 +223,3 @@
     background-color: white;
   }
 }
-
-// <section class="modal">
-//     <!-- visually-hidden -->
-//     <h2 class="modal__header">Закажите звонок</h2>
-//     <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-//     <form action="#" class="modal__form" method="post">
-//       <label class="modal__label modal__label--name" for="name"></label>
-//       <input class="modal__input modal__input--name" id="name" name="name" placeholder="Имя" type="text">
-//       <label class="modal__label modal__label--phone" for="phone"></label>
-//       <input class="modal__input modal__input--phone" id="phone" name="name" placeholder="Телефон" type="text">
-//       <label class="modal__label modal__label--question" for="question"></label>
-//       <input class="modal__input modal__input--question" id="question" name="name" placeholder="Ваш вопрос" type="text">
-//       <button class="modal__button" type="submit">Отправить</button>
-//       <input class="modal__checkbox" type="checkbox" id="modal-agree" name="modal-agree" value="yes" checked>
-//       <label class="modal__checkbox__label" for="modal-agree">Я согласен на обработку персональных данных</label>
-//     </form>
-//     <button class="modal__close" type="button">Закрыть</button>
-//   </section>

@@ -204,13 +204,13 @@
     }
   }
 
-  .advantages__item:first-child,
-  .advantages__item:nth-child(2) {
+  .advantages__item--suppliers,
+  .advantages__item--terms {
     min-height: 306px;
   }
 
-  .advantages__item:nth-child(3),
-  .advantages__item:nth-child(4) {
+  .advantages__item--confidence,
+  .advantages__item--cost {
     min-height: 232px;
   }
 
@@ -264,16 +264,16 @@
     }
   }
 
-  .advantages__item:first-child,
-  .advantages__item:nth-child(2) {
+  .advantages__item--terms,
+  .advantages__item--suppliers {
     min-height: 310px;
   }
 
-  .advantages__item:nth-child(3) {
+  .advantages__item--confidence {
     min-height: 232px;
   }
 
-  .advantages__item:nth-child(4) {
+  .advantages__item--cost {
     min-height: 244px;
   }
 
@@ -289,20 +289,20 @@
     padding-bottom: 8px;
   }
 
-  .advantages__item:nth-child(3) .advantages__title,
-  .advantages__item:nth-child(4) .advantages__title {
+  .advantages__item--confidence .advantages__title,
+  .advantages__item--cost .advantages__title {
     padding-top: 1px;
   }
 
-  .advantages__item:nth-child(3) .advantages__title{
+  .advantages__item--confidence .advantages__title{
     padding-bottom: 0px;
   }
 
-  .advantages__item:nth-child(3) .advantages__description{
+  .advantages__item--confidence .advantages__description{
     margin-top: -7px;
   }
 
-  .advantages__item:nth-child(4) .advantages__title {
+  .advantages__item--cost .advantages__title {
     padding-bottom: 14px;
   }
 

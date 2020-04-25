@@ -79,11 +79,13 @@ form.addEventListener("submit", function(evt) {
 });
 
 window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal__show")) {
-      popup.classList.remove("modal__show");
-      popup.classList.remove("modal__error");
+  if (popup) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal__show")) {
+        popup.classList.remove("modal__show");
+        popup.classList.remove("modal__error");
+      }
     }
   }
 });

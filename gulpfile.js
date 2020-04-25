@@ -10,7 +10,7 @@ const run = require('run-sequence');
 const rename = require("gulp-rename");
 const del = require('del');
 const csso = require('gulp-csso');
-const htmlmin = require('gulp-htmlmin');
+// const htmlmin = require('gulp-htmlmin');
 
 // var sourcemap = require("gulp-sourcemaps");
 // var imagemin = require("gulp-imagemin");
@@ -77,11 +77,11 @@ gulp.task("style", function() {
 //     .pipe(gulp.dest("build/img"));
 // });
 
-gulp.task('htmlmin', function() {
-  return gulp.src("build/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
-});
+// gulp.task('htmlmin', function() {
+//   return gulp.src("build/*.html")
+//     .pipe(htmlmin({collapseWhitespace: true}))
+//     .pipe(gulp.dest("build"));
+// });
 
 // gulp.task("html", function () { // добавила
 //   return gulp.src("source/*.html")
@@ -94,11 +94,12 @@ gulp.task('htmlmin', function() {
 gulp.task("copyHtml", function () {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    // .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'style', 'htmlmin', function (done) {
+// gulp.task('build', gulp.series('clean', 'copy', 'style', 'htmlmin', function (done) {
+gulp.task('build', gulp.series('clean', 'copy', 'style', function (done) {
   done();
 }));
 
