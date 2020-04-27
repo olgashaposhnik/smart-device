@@ -1779,7 +1779,7 @@ input[type="radio"].visually-hidden {
           flex-direction: row;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  width: 250px;
+  min-width: 215px;
   width: 17.7%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
