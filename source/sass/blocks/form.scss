@@ -35,6 +35,10 @@
   &:focus {
     border: 1px solid #FFFFFF;
   }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
 }
 
 .form input {
@@ -48,12 +52,16 @@
 
 .form textarea {
   width: 100%;
-  padding-bottom: 35px;
+  padding-bottom: 79px;
   resize: none;
   overflow: auto;
 }
 
 .form button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -64,7 +72,9 @@
   text-transform: uppercase;
   color: #FFFFFF;
   width: 47.4%;
-  height: 45px;
+  min-height: 45px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 5px;
@@ -108,7 +118,7 @@
   background-position: center center;
   background-size: 50% 50%;
   margin-right: 17px;
-  margin-top: 8px;
+  margin-top: 2px;
   cursor: pointer;
 }
 
@@ -131,6 +141,9 @@
   color: rgba(255,255,255, 0.8);
   padding-left: 38px;
   cursor: pointer;
+  display: inline-flex;
+  user-select: none;
+  padding-top: 8px;
 
   &:hover{
     color: #FFFFFF;
@@ -167,7 +180,7 @@
 
   .form textarea {
     width: 100%;
-    padding-bottom: 38px;
+    padding-bottom: 81px;
     padding-right: 0px;
     padding-left: 17px;
     resize: none;
@@ -209,7 +222,7 @@
     background-position: center center;
     background-size: 50% 50%;
     margin-right: 17px;
-    margin-top: 11px;
+    margin-top: 4px;
     cursor: pointer;
   }
 
@@ -313,7 +326,7 @@
     line-height: 16px;
     color: rgba(255,255,255, 0.8);
     padding-left: 1px;
-    padding-top: 6px;
+    padding-top: 9px;
     padding-bottom: 42px;
   }
 }

@@ -1484,7 +1484,8 @@ input[type="radio"].visually-hidden {
   .about-company__button {
     background-color: transparent;
     margin-left: 5.6%;
-    margin-top: 17px; }
+    margin-top: 17px;
+    min-width: 180px; }
   .about-company__image {
     display: none; } }
 
@@ -1782,11 +1783,25 @@ input[type="radio"].visually-hidden {
   min-width: 215px;
   width: 17.7%;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  padding-top: 65px; }
   .page-footer__logo:hover {
     opacity: 0.8; }
   .page-footer__logo:active {
     opacity: 0.6; }
+
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .page-footer__rights,
 .page-footer__year,
@@ -1888,7 +1903,20 @@ input[type="radio"].visually-hidden {
     width: 32.5%;
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
-            order: -2; }
+            order: -2;
+    padding-top: 19px; }
+  .page-footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .page-footer__rights,
   .page-footer__year,
   .page-footer__conditions,
@@ -1959,15 +1987,18 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 250px;
+    width: 100%;
     margin: 0 auto;
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
     padding-left: 4.7%;
-    padding-right: 4.7%; }
+    padding-right: 4.7%;
+    padding-top: 46px; }
   .page-footer__rights,
   .page-footer__year,
   .page-footer__conditions,
@@ -1986,6 +2017,18 @@ input[type="radio"].visually-hidden {
     opacity: 0.5;
     margin: 0;
     width: 100%; }
+  .page-footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .page-footer__rights {
     display: none; }
   .page-footer__year {
@@ -2212,9 +2255,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 65px;
-  padding-left: 12.2%;
   width: 571px;
-  width: 51.1%;
+  width: 56%;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2463,9 +2505,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   color: #1B2D37;
   padding-top: 65px;
-  padding-left: 7.3%;
   width: 592px;
-  width: 31.2%;
+  width: 34%;
   padding-bottom: 74px; }
 
 .footer-contacts__header {
@@ -2781,6 +2822,9 @@ input[type="radio"].visually-hidden {
   .form input:focus,
   .form textarea:focus {
     border: 1px solid #FFFFFF; }
+  .form input:hover,
+  .form textarea:hover {
+    background: rgba(255, 255, 255, 0.4); }
 
 .form input {
   width: 47.4%;
@@ -2791,11 +2835,22 @@ input[type="radio"].visually-hidden {
 
 .form textarea {
   width: 100%;
-  padding-bottom: 35px;
+  padding-bottom: 79px;
   resize: none;
   overflow: auto; }
 
 .form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2806,7 +2861,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #FFFFFF;
   width: 47.4%;
-  height: 45px;
+  min-height: 45px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2852,7 +2909,7 @@ input[type="radio"].visually-hidden {
   background-position: center center;
   background-size: 50% 50%;
   margin-right: 17px;
-  margin-top: 8px;
+  margin-top: 2px;
   cursor: pointer; }
 
 .form input[type="checkbox"]:hover + label::before {
@@ -2871,7 +2928,15 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   color: rgba(255, 255, 255, 0.8);
   padding-left: 38px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-top: 8px; }
   .form input[type="checkbox"] + label:hover {
     color: #FFFFFF; }
 
@@ -2904,7 +2969,7 @@ input[type="radio"].visually-hidden {
     margin-right: 5.2%; }
   .form textarea {
     width: 100%;
-    padding-bottom: 38px;
+    padding-bottom: 81px;
     padding-right: 0px;
     padding-left: 17px;
     resize: none;
@@ -2946,7 +3011,7 @@ input[type="radio"].visually-hidden {
     background-position: center center;
     background-size: 50% 50%;
     margin-right: 17px;
-    margin-top: 11px;
+    margin-top: 4px;
     cursor: pointer; }
   .form input[type="checkbox"]:checked + label::before {
     background-image: url("../img/checkbox.svg");
@@ -3037,5 +3102,5 @@ input[type="radio"].visually-hidden {
     line-height: 16px;
     color: rgba(255, 255, 255, 0.8);
     padding-left: 1px;
-    padding-top: 6px;
+    padding-top: 9px;
     padding-bottom: 42px; } }
