@@ -30,7 +30,7 @@
   width: 29.7%;
   margin: 0;
   padding: 0;
-  margin-left: 50.7%;
+  margin-left: 50.6%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,7 +47,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  padding-top: 90px;
+  padding-top: 92px;
   padding-bottom: 10px;
   position: relative;
 }
@@ -62,144 +62,145 @@
   margin: 0;
   width: 100%;
   padding-bottom: 52px;
+  margin-left: 3px;
 }
 
 .consult__form {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin-left: 3px;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
 }
 
-.consult__label {
-  font-size: 0;
-}
+// .consult__label {
+//   font-size: 0;
+// }
 
-.consult__form input {
-  font-family: "PTMono-Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  box-sizing: border-box;
-  border: none;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  resize: none;
-  color: #FFFFFF;
-  margin-bottom: 40px;
+// .consult__form input {
+//   font-family: "PTMono-Regular", "Arial", sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 22px;
+//   box-sizing: border-box;
+//   border: none;
+//   background: rgba(255, 255, 255, 0.1);
+//   resize: none;
+//   color: #FFFFFF;
+//   margin-bottom: 40px;
 
-  &::placeholder {
-    color: #FFFFFF;
-  }
-}
+//   &::placeholder {
+//     color: #FFFFFF;
+//   }
+// }
 
-.consult__name {
-  color: #FFFFFF;
-  width: 47.4%;
-  margin-right: 5%;
-  padding-top: 9px;
-  padding-bottom: 15px;
-  padding-left: 17px;
-}
+// .consult__name {
+//   color: #FFFFFF;
+//   width: 47.4%;
+//   margin-right: 5%;
+//   padding-top: 9px;
+//   padding-bottom: 15px;
+//   padding-left: 17px;
+// }
 
-.consult__phone {
-  width: 47.4%;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
+// .consult__phone {
+//   width: 47.4%;
+//   padding-top: 9px;
+//   padding-bottom: 10px;
+//   padding-left: 20px;
+// }
 
-.consult__question {
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 125px;
-  padding-left: 15px;
-}
+// .consult__question {
+//   width: 100%;
+//   padding-top: 12px;
+//   padding-bottom: 125px;
+//   padding-left: 15px;
+// }
 
-.consult__button {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  width: 47.4%;
-  height: 45px;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 5px;
-  background-color: transparent;
-  margin-left: 0;
-  margin-bottom: 114px;
-  cursor: pointer;
+// .consult__button {
+//   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 14px;
+//   line-height: 16px;
+//   text-align: center;
+//   letter-spacing: 0.05em;
+//   text-transform: uppercase;
+//   color: #FFFFFF;
+//   width: 47.4%;
+//   height: 45px;
+//   border: 1px solid #FFFFFF;
+//   box-sizing: border-box;
+//   border-radius: 5px;
+//   background-color: transparent;
+//   margin-left: 0;
+//   margin-bottom: 114px;
+//   cursor: pointer;
 
-  &:hover {
-    background: #FFFFFF;
-    color: #00B2FF;
-    border: 1px solid #00B2FF;
-  }
+//   &:hover {
+//     background: #FFFFFF;
+//     color: #00B2FF;
+//     border: 1px solid #00B2FF;
+//   }
 
-  &:active {
-    opacity: 0.6;
-  }
-}
+//   &:active {
+//     opacity: 0.6;
+//   }
+// }
 
-.consult__checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
+// .consult__checkbox {
+//   position: absolute;
+//   z-index: -1;
+//   opacity: 0;
+// }
 
-.consult__checkbox+label {
-  display: inline-flex;
-  user-select: none;
-  padding-top: 10px;
-}
+// .consult__checkbox+label {
+//   display: inline-flex;
+//   user-select: none;
+//   padding-top: 10px;
+// }
 
-.consult__checkbox+label::before {
-  content: '';
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 1px solid #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-  margin-right: 17px;
-  cursor: pointer;
-}
+// .consult__checkbox+label::before {
+//   content: '';
+//   display: inline-block;
+//   width: 14px;
+//   height: 14px;
+//   flex-shrink: 0;
+//   flex-grow: 0;
+//   border: 1px solid #FFFFFF;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: 50% 50%;
+//   margin-right: 17px;
+//   cursor: pointer;
+// }
 
-.consult__checkbox:hover+label::before {
-  opacity: 0.6;
-}
+// .consult__checkbox:hover+label::before {
+//   opacity: 0.6;
+// }
 
-.consult__checkbox:checked+label::before {
-  background-image: url("../img/checkbox.svg");
-  margin-right: 17px;
-}
+// .consult__checkbox:checked+label::before {
+//   background-image: url("../img/checkbox.svg");
+//   margin-right: 17px;
+// }
 
-.consult__checkbox__label {
-  width: 47.4%;
-  padding-left: 39px;
-  font-family: "PTMono-Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgba(255,255,255, 0.8);
-  padding-left: 38px;
-  cursor: pointer;
+// .consult__checkbox__label {
+//   width: 47.4%;
+//   padding-left: 39px;
+//   font-family: "PTMono-Regular", "Arial", sans-serif;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 14px;
+//   line-height: 16px;
+//   color: rgba(255,255,255, 0.8);
+//   padding-left: 38px;
+//   cursor: pointer;
 
-  &:hover{
-    color: #FFFFFF;
-  }
-}
+//   &:hover{
+//     color: #FFFFFF;
+//   }
+// }
 
 @media (max-width: $tablet-width) {
   .consult {
@@ -238,84 +239,81 @@
   }
 
   .consult__text {
-    padding-bottom: 56px;
+    padding-bottom: 54px;
   }
 
   .consult__form {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 2px;
   }
 
-  .consult__form input {
-    margin-bottom: 47px;
+  // .consult__form input {
+  //   margin-bottom: 47px;
 
-    &::placeholder {
-      color: #FFFFFF;
-    }
-  }
+  //   &::placeholder {
+  //     color: #FFFFFF;
+  //   }
+  // }
 
-  .consult__name {
-    color: #FFFFFF;
-    width: 47.4%;
-    margin-right: 5%;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 14px;
-  }
+  // .consult__name {
+  //   color: #FFFFFF;
+  //   width: 47.4%;
+  //   margin-right: 5%;
+  //   padding-top: 9px;
+  //   padding-bottom: 10px;
+  //   padding-left: 14px;
+  // }
 
-  .consult__phone {
-    width: 47.4%;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-  }
+  // .consult__phone {
+  //   width: 47.4%;
+  //   padding-top: 9px;
+  //   padding-bottom: 10px;
+  //   padding-left: 15px;
+  // }
 
-  .consult__question {
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 122px;
-    padding-left: 15px;
-    margin-bottom: 47px;
-  }
+  // .consult__question {
+  //   width: 100%;
+  //   padding-top: 12px;
+  //   padding-bottom: 122px;
+  //   padding-left: 15px;
+  //   margin-bottom: 47px;
+  // }
 
-  .consult__button {
-    margin-top: 5px;
-    margin-bottom: 104px;
-  }
+  // .consult__button {
+  //   margin-top: 5px;
+  //   margin-bottom: 104px;
+  // }
 
-  .consult__checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
+  // .consult__checkbox {
+  //   position: absolute;
+  //   z-index: -1;
+  //   opacity: 0;
+  // }
 
-  .consult__checkbox+label {
-    padding-top: 14px;
-  }
+  // .consult__checkbox+label {
+  //   padding-top: 14px;
+  // }
 
-  .consult__checkbox+label::before {
-    content: '';
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #FFFFFF;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
+  // .consult__checkbox+label::before {
+  //   content: '';
+  //   display: inline-block;
+  //   width: 14px;
+  //   height: 14px;
+  //   flex-shrink: 0;
+  //   flex-grow: 0;
+  //   border: 1px solid #FFFFFF;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: 50% 50%;
+  // }
 
-  .consult__checkbox:checked+label::before {
-    background-image: url("../img/checkbox.svg");
-    margin-right: 17px;
-  }
+  // .consult__checkbox:checked+label::before {
+  //   background-image: url("../img/checkbox.svg");
+  //   margin-right: 17px;
+  // }
 
-  .consult__label {
-    padding-left: 42px;
-  }
+  // .consult__label {
+  //   padding-left: 0px;
+  // }
 }
 
 @media (max-width: $mobile-width) {
@@ -355,87 +353,85 @@
   }
 
   .consult__text {
-    padding-bottom: 27px;
+    padding-bottom: 25px;
     font-size: 16px;
     line-height: 22px;
+    margin-left: 1px;
   }
 
   .consult__form {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 0px;
   }
 
-  .consult__form input {
-    margin-bottom: 32px;
+  // .consult__form input {
+  //   margin-bottom: 32px;
 
-    &::placeholder {
-      color: #FFFFFF;
-    }
-  }
+  //   &::placeholder {
+  //     color: #FFFFFF;
+  //   }
+  // }
 
-  .consult__name {
-    color: #FFFFFF;
-    width: 100%;
-    margin-right: 0%;
-    padding-top: 11px;
-    padding-bottom: 15px;
-    padding-left: 17px;
-  }
+  // .consult__name {
+  //   color: #FFFFFF;
+  //   width: 100%;
+  //   margin-right: 0%;
+  //   padding-top: 11px;
+  //   padding-bottom: 15px;
+  //   padding-left: 17px;
+  // }
 
-  .consult__phone {
-    width: 100%;
-    padding-top: 13px;
-    padding-bottom: 16px;
-    padding-left: 17px;
-  }
+  // .consult__phone {
+  //   width: 100%;
+  //   padding-top: 13px;
+  //   padding-bottom: 16px;
+  //   padding-left: 17px;
+  // }
 
-  .consult__question {
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 69px;
-    padding-left: 17px;
-  }
+  // .consult__question {
+  //   width: 100%;
+  //   padding-top: 12px;
+  //   padding-bottom: 69px;
+  //   padding-left: 17px;
+  // }
 
-  .consult__button {
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 18px;
-    cursor: pointer;
-  }
+  // .consult__button {
+  //   width: 100%;
+  //   margin-top: 0px;
+  //   margin-bottom: 18px;
+  //   cursor: pointer;
+  // }
 
-  .consult__checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
+  // .consult__checkbox {
+  //   position: absolute;
+  //   z-index: -1;
+  //   opacity: 0;
+  // }
 
-  .consult__checkbox+label {
-    padding-top: 14px;
-  }
+  // .consult__checkbox+label {
+  //   padding-top: 14px;
+  // }
 
-  .consult__checkbox+label::before {
-    content: '';
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #FFFFFF;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
+  // .consult__checkbox+label::before {
+  //   content: '';
+  //   display: inline-block;
+  //   width: 14px;
+  //   height: 14px;
+  //   flex-shrink: 0;
+  //   flex-grow: 0;
+  //   border: 1px solid #FFFFFF;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: 50% 50%;
+  // }
 
-  .consult__checkbox:checked+label::before {
-    background-image: url("../img/checkbox.svg");
-    margin-right: 17px;
-  }
+  // .consult__checkbox:checked+label::before {
+  //   background-image: url("../img/checkbox.svg");
+  //   margin-right: 17px;
+  // }
 
-  .consult__label {
-    padding-left: 0px;
-    width: 80%;
-    padding-bottom: 41px;
-  }
+  // .consult__label {
+  //   padding-left: 0px;
+  //   width: 80%;
+  //   padding-bottom: 41px;
+  // }
 }

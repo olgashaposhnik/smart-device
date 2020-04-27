@@ -1,0 +1,319 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #00B2FF;
+  width: 100%;
+  // justify-content: space-between;
+}
+
+.form label {
+  font-size: 0;
+}
+
+.form input,
+.form textarea {
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  box-sizing: border-box;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  resize: none;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  padding-left: 19px;
+  padding-top: 10px;
+  outline: none;
+
+  &::placeholder {
+    color: #FFFFFF;
+  }
+
+  &:focus {
+    border: 1px solid #FFFFFF;
+  }
+}
+
+.form input {
+  width: 47.4%;
+  padding-bottom: 17px;
+}
+
+.form__input--name {
+  margin-right: 5.2%;
+}
+
+.form textarea {
+  width: 100%;
+  padding-bottom: 35px;
+  resize: none;
+  overflow: auto;
+}
+
+.form button {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 47.4%;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-left: 0;
+  margin-bottom: 114px;
+  cursor: pointer;
+
+  &:hover {
+    background: #FFFFFF;
+    color: #00B2FF;
+    border: 1px solid #00B2FF;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.form input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form input[type="checkbox"] {
+  display: inline-flex;
+  user-select: none;
+  padding-top: 10px;
+}
+
+.form input[type="checkbox"]+label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  margin-right: 17px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.form input[type="checkbox"]:hover+label::before {
+  opacity: 0.6;
+}
+
+.form input[type="checkbox"]:checked+label::before {
+  background-image: url("../img/checkbox.svg");
+  margin-right: 17px;
+}
+
+.form input[type="checkbox"] + label {
+  width: 47.4%;
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255,255,255, 0.8);
+  padding-left: 38px;
+  cursor: pointer;
+
+  &:hover{
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #00B2FF;
+    width: 100%;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 16px;
+    line-height: 22px;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+    padding-left: 19px;
+    padding-top: 12px;
+  }
+
+  .form input {
+    width: 47.4%;
+    padding-bottom: 17px;
+  }
+
+  .form__input--name {
+    margin-right: 5.2%;
+  }
+
+  .form textarea {
+    width: 100%;
+    padding-bottom: 38px;
+    padding-right: 0px;
+    padding-left: 17px;
+    resize: none;
+    overflow: auto;
+  }
+
+  .form button {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    width: 47.4%;
+    margin-left: 0;
+    margin-top: 2px;
+    margin-bottom: 105px;
+    min-height: 45px;
+  }
+
+  .form input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .form input[type="checkbox"] {
+    display: inline-flex;
+    user-select: none;
+    padding-top: 10px;
+  }
+
+  .form input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 17px;
+    margin-top: 11px;
+    cursor: pointer;
+  }
+
+  .form input[type="checkbox"]:checked+label::before {
+    background-image: url("../img/checkbox.svg");
+    margin-right: 17px;
+  }
+
+  .form input[type="checkbox"] + label {
+    width: 47.4%;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255,255,255, 0.8);
+    padding-left: 38px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 16px;
+    line-height: 22px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding-left: 17px;
+    padding-top: 13px;
+  }
+
+  .form input {
+    width: 100%;
+    padding-bottom: 17px;
+  }
+
+  .form__input--name {
+    margin-right: 0%;
+  }
+
+  .form textarea {
+    width: 100%;
+    padding-bottom: 26px;
+    padding-right: 0px;
+    padding-left: 17px;
+    resize: none;
+    overflow: auto;
+    margin-bottom: 28px;
+  }
+
+  .form button {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2px;
+    margin-bottom: 22px;
+    min-height: 45px;
+  }
+
+  .form input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .form input[type="checkbox"] {
+    display: inline-flex;
+    user-select: none;
+    padding-top: 10px;
+  }
+
+  .form input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 17px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+
+  .form input[type="checkbox"]:checked+label::before {
+    background-image: url("../img/checkbox.svg");
+    margin-right: 17px;
+  }
+
+  .form input[type="checkbox"] + label {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255,255,255, 0.8);
+    padding-left: 1px;
+    padding-top: 6px;
+    padding-bottom: 42px;
+  }
+}
