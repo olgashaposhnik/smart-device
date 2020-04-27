@@ -24,19 +24,21 @@
 
 .advantages__list {
   list-style-type: none;
-  width: 62.5%;
+  width: 60.9%;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
+  justify-content: space-between;
 }
 
 .advantages__item {
-  width: 47.5%;
+  width: 48.7%;
   min-height: 299px;
-  margin: 0 auto;
+  // margin: 0 auto;
+  // margin-left: 30px;
   padding: 0;
   margin-bottom: 30px;
   background: #FFFFFF;
@@ -111,7 +113,7 @@
   color: #00B2FF;
   margin: 0;
   padding: 0;
-  padding-left: 44px;
+  padding-left: 42px;
   padding-top: 15px;
   padding-bottom: 17px;
 }
@@ -152,11 +154,11 @@
   }
 
   .advantages__list {
-    width: 96%;
+    width: 93.5%;
   }
 
   .advantages__item {
-    width: 46.6%;
+    width: 47.9%;
     margin-bottom: 30px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -168,39 +170,44 @@
       background-color: #00B2FF;
     }
 
+    & svg {
+      margin-top: 7%;
+      margin-left: 7%;
+    }
+
     &--terms svg {
       width: 29px;
       height: 35px;
-      margin-top: 24px;
-      margin-left: 23px;
+      // margin-top: 24px;
+      // margin-left: 23px;
     }
 
     &--suppliers svg {
       width: 35px;
       height: 35px;
-      margin-top: 24px;
-      margin-left: 25px;
+      // margin-top: 24px;
+      // margin-left: 25px;
     }
 
     &--suppliers svg {
       width: 35px;
       height: 35px;
-      margin-top: 24px;
-      margin-left: 23px;
+      // margin-top: 24px;
+      // margin-left: 23px;
     }
 
     &--confidence svg {
       width: 35px;
       height: 35px;
-      margin-top: 24px;
-      margin-left: 23px;
+      // margin-top: 24px;
+      // margin-left: 23px;
     }
 
     &--cost svg {
       width: 35px;
       height: 35px;
-      margin-top: 24px;
-      margin-left: 23px;
+      // margin-top: 24px;
+      // margin-left: 23px;
     }
   }
 
@@ -218,7 +225,7 @@
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    padding-left: 6.6%;
+    padding-left: 7.6%;
     padding-top: 2px;
     padding-bottom: 9px;
   }
@@ -226,7 +233,7 @@
   .advantages__description {
     margin: 0;
     padding: 0;
-    padding-left: 6.6%;
+    padding-left: 7.6%;
     padding-bottom: 19px;
     width: 93.3%;
   }
@@ -234,6 +241,7 @@
 
 @media (max-width: $mobile-width) {
   .advantages {
+    margin: 0 auto;
     padding-top: 37px;
     padding-bottom: 37px;
     position: relative;
@@ -251,6 +259,7 @@
 
   .advantages__item {
     width: 90.6%;
+    margin: 0 auto;
     margin-bottom: 20px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;

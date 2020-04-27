@@ -19,7 +19,7 @@
   font-size: 16px;
   line-height: 22px;
   box-sizing: border-box;
-  border: none;
+  border: 1px solid transparent;
   background: rgba(255, 255, 255, 0.1);
   resize: none;
   color: #FFFFFF;
@@ -147,6 +147,10 @@
 
   &:hover{
     color: #FFFFFF;
+  }
+
+  &:focus{
+    color: #FFFFFF; // подумать
   }
 }
 

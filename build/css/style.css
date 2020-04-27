@@ -924,7 +924,7 @@ input[type="radio"].visually-hidden {
 
 .advantages__list {
   list-style-type: none;
-  width: 62.5%;
+  width: 60.9%;
   margin: 0 auto;
   padding: 0;
   display: -webkit-box;
@@ -936,12 +936,14 @@ input[type="radio"].visually-hidden {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .advantages__item {
-  width: 47.5%;
+  width: 48.7%;
   min-height: 299px;
-  margin: 0 auto;
   padding: 0;
   margin-bottom: 30px;
   background: #FFFFFF;
@@ -999,7 +1001,7 @@ input[type="radio"].visually-hidden {
   color: #00B2FF;
   margin: 0;
   padding: 0;
-  padding-left: 44px;
+  padding-left: 42px;
   padding-top: 15px;
   padding-bottom: 17px; }
 
@@ -1034,9 +1036,9 @@ input[type="radio"].visually-hidden {
       left: 172px;
       z-index: -1; }
   .advantages__list {
-    width: 96%; }
+    width: 93.5%; }
   .advantages__item {
-    width: 46.6%;
+    width: 47.9%;
     margin-bottom: 30px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -1046,31 +1048,24 @@ input[type="radio"].visually-hidden {
     border-left: 2px solid #00B2FF; }
     .advantages__item:hover {
       background-color: #00B2FF; }
+    .advantages__item svg {
+      margin-top: 7%;
+      margin-left: 7%; }
     .advantages__item--terms svg {
       width: 29px;
-      height: 35px;
-      margin-top: 24px;
-      margin-left: 23px; }
+      height: 35px; }
     .advantages__item--suppliers svg {
       width: 35px;
-      height: 35px;
-      margin-top: 24px;
-      margin-left: 25px; }
+      height: 35px; }
     .advantages__item--suppliers svg {
       width: 35px;
-      height: 35px;
-      margin-top: 24px;
-      margin-left: 23px; }
+      height: 35px; }
     .advantages__item--confidence svg {
       width: 35px;
-      height: 35px;
-      margin-top: 24px;
-      margin-left: 23px; }
+      height: 35px; }
     .advantages__item--cost svg {
       width: 35px;
-      height: 35px;
-      margin-top: 24px;
-      margin-left: 23px; }
+      height: 35px; }
   .advantages__item--suppliers,
   .advantages__item--terms {
     min-height: 306px; }
@@ -1081,18 +1076,19 @@ input[type="radio"].visually-hidden {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    padding-left: 6.6%;
+    padding-left: 7.6%;
     padding-top: 2px;
     padding-bottom: 9px; }
   .advantages__description {
     margin: 0;
     padding: 0;
-    padding-left: 6.6%;
+    padding-left: 7.6%;
     padding-bottom: 19px;
     width: 93.3%; } }
 
 @media (max-width: 767px) {
   .advantages {
+    margin: 0 auto;
     padding-top: 37px;
     padding-bottom: 37px;
     position: relative;
@@ -1104,6 +1100,7 @@ input[type="radio"].visually-hidden {
     width: 100%; }
   .advantages__item {
     width: 90.6%;
+    margin: 0 auto;
     margin-bottom: 20px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -1394,7 +1391,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 13px;
   padding-left: 5px;
   padding-right: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  z-index: 3; }
   .about-company__button:hover {
     color: #FFFFFF;
     background-color: #00B2FF;
@@ -1524,7 +1523,7 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
-  width: 61.98%;
+  width: 60.94%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1532,18 +1531,19 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   margin: 0 auto;
   padding-bottom: 126px; }
 
 .services__item {
-  width: 31.1%;
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-left: 3.4%;
-  padding-right: 15%;
-  padding-bottom: 42.9%;
-  position: relative; }
+  width: 31.6%;
+  position: relative;
+  background-color: slategray; }
   .services__item::after {
     content: "";
     position: absolute;
@@ -1578,10 +1578,20 @@ input[type="radio"].visually-hidden {
     background-position: center;
     background-repeat: no-repeat; }
 
-.services__item a {
+.services__item__link {
   display: block;
-  width: 100%;
-  height: 100%; }
+  padding-top: 48px;
+  padding-left: 11.8%;
+  padding-right: 42%;
+  padding-bottom: 137.9%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid transparent; }
+  .services__item__link:hover {
+    color: #00B2FF;
+    border: 1px solid #00B2FF; }
+  .services__item__link:active {
+    opacity: 0.6; }
 
 @media (max-width: 1023px) {
   .services {
@@ -1615,15 +1625,10 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding-bottom: 33px; }
   .services__item {
-    width: 715px;
+    width: 720px;
     padding: 0;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-left: 5.5%;
-    padding-right: 65%;
-    padding-bottom: 156px;
-    margin-bottom: 46px;
-    position: relative; }
+    margin-bottom: 46px; }
     .services__item::after {
       content: "";
       position: absolute;
@@ -1648,7 +1653,7 @@ input[type="radio"].visually-hidden {
     .services__item--manufacture {
       background-image: url("../img/service1-tablet.png");
       background-position: center;
-      background-repeat: no-repeat; }
+      background-repeat: repeat; }
     .services__item--installation {
       background-image: url("../img/service2-tablet.png");
       background-position: center;
@@ -1656,8 +1661,18 @@ input[type="radio"].visually-hidden {
     .services__item--catalog {
       background-image: url("../img/service3-tablet.png");
       background-position: center;
-      background-repeat: no-repeat;
-      padding-top: 50px;
+      background-repeat: no-repeat; }
+  .services__item__link {
+    width: 720px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-left: 44px;
+    padding-right: 502px;
+    padding-bottom: 155px;
+    position: relative; }
+    .services__item__link--catalog {
+      padding-top: 47px;
       padding-bottom: 146px; } }
 
 @media (max-width: 767px) {
@@ -1676,12 +1691,12 @@ input[type="radio"].visually-hidden {
   .services__header {
     font-size: 28px;
     line-height: 140.62%;
-    width: 100%;
+    width: 95%;
     padding: 0;
     margin: 0;
     padding-top: 51px;
     padding-left: 8%;
-    padding-bottom: 23px; }
+    padding-bottom: 41px; }
   .services__list {
     font-size: 20px;
     line-height: 30px;
@@ -1692,16 +1707,12 @@ input[type="radio"].visually-hidden {
             flex-direction: column;
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 53px; }
+    padding-bottom: 34px; }
   .services__item {
     width: 290px;
     padding: 0;
     margin: 0 auto;
-    padding-top: 39px;
-    padding-left: 10.9%;
-    padding-right: 26%;
-    padding-bottom: 194px;
-    margin-bottom: -7px;
+    margin-bottom: 30px;
     position: relative; }
     .services__item::after {
       content: "";
@@ -1710,7 +1721,7 @@ input[type="radio"].visually-hidden {
       background-position: center;
       width: 63px;
       height: 63px;
-      bottom: 18px;
+      bottom: 0px;
       right: 0px;
       z-index: 2; }
     .services__item::before {
@@ -1721,7 +1732,7 @@ input[type="radio"].visually-hidden {
       background-repeat: no-repeat;
       width: 20px;
       height: 8px;
-      bottom: 45px;
+      bottom: 27px;
       right: 22px;
       z-index: 3; }
     .services__item--manufacture {
@@ -1734,10 +1745,19 @@ input[type="radio"].visually-hidden {
       background-repeat: no-repeat; }
     .services__item--catalog {
       background-image: url("../img/service3-mobile.png");
-      background-position: top 19px right 0px;
-      background-repeat: no-repeat;
-      padding-top: 49px;
-      padding-bottom: 184px; } }
+      background-repeat: no-repeat; }
+  .services__item__link {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 19px;
+    padding-left: 34px;
+    padding-right: 102px;
+    padding-bottom: 175px; }
+    .services__item__link--catalog {
+      padding-top: 29px;
+      padding-bottom: 165px; } }
 
 .page-footer {
   display: -webkit-box;
@@ -2796,7 +2816,7 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: none;
+  border: 1px solid transparent;
   background: rgba(255, 255, 255, 0.1);
   resize: none;
   color: #FFFFFF;
@@ -2938,6 +2958,8 @@ input[type="radio"].visually-hidden {
           user-select: none;
   padding-top: 8px; }
   .form input[type="checkbox"] + label:hover {
+    color: #FFFFFF; }
+  .form input[type="checkbox"] + label:focus {
     color: #FFFFFF; }
 
 @media (max-width: 1023px) {
