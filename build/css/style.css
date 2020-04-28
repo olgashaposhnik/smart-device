@@ -1545,7 +1545,7 @@ input[type="radio"].visually-hidden {
   max-width: 370px;
   max-height: 620px;
   position: relative;
-  background-color: slategray;
+  background-color: #1B2D37;
   margin-bottom: 30px; }
   .services__item::after {
     content: "";
