@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <meta name="Description" content="Печатные платы «Smart Device» производство и монтаж, поставка комплектующих, блоков и модулей">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -90,11 +90,11 @@
         <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
         <form class="consult__form form" action="index.html" method="post">
           <label class="consult__label consult__label--name" for="name">Имя</label>
-          <input aria-label="Введите Ваше имя" class="consult__name form__input--name" type="text" name="name" placeholder="Имя">
+          <input aria-label="Введите Ваше имя" class="consult__name form__input--name" type="text" id="name" name="name" placeholder="Имя">
           <label class="consult__label consult__label--phone" for="phone">Телефон</label>
-          <input aria-label="Введите Ваш телефон" class="consult__phone" type="tel" name="phone" placeholder="Телефон">
+          <input aria-label="Введите Ваш телефон" class="consult__phone" type="tel" id="phone" name="phone" placeholder="Телефон">
           <label class="consult__label consult__label--question" for="question">Ваш вопро</label>
-          <textarea aria-label="Введите Ваш вопрос" class="consult__question" name="question" placeholder="Ваш вопрос" cols="30" rows="3"></textarea>
+          <textarea aria-label="Введите Ваш вопрос" class="consult__question" id="question" name="question" placeholder="Ваш вопрос" cols="30" rows="3"></textarea>
           <button type="submit" class="consult__button">Задать вопрос</button>
           <input class="consult__checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
           <label class="consult__checkbox__label form__checkbox__label" for="agree">Я согласен на обработку персональных данных</label>
