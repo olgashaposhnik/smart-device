@@ -42,6 +42,8 @@
 
 .services__item {
   width: 31.6%;
+  max-width: 370px;
+  max-height: 620px;
   // margin: 0 auto;
   // padding-top: 50px;
   // padding-left: 3.4%;
@@ -101,8 +103,10 @@
   padding-top: 48px;
   padding-left: 11.8%;
   padding-right: 42%;
+  padding-left: 43px;
+  padding-right: 153px;
   padding-bottom: 137.9%;
-  // padding-bottom: 511px;
+  padding-bottom: 511px;
   box-sizing: border-box;
   border: 1px solid transparent;
 
@@ -147,6 +151,7 @@
 
   .services__item {
     width: 720px;
+    max-width: 720px;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 46px;

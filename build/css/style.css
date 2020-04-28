@@ -1542,6 +1542,8 @@ input[type="radio"].visually-hidden {
 
 .services__item {
   width: 31.6%;
+  max-width: 370px;
+  max-height: 620px;
   position: relative;
   background-color: slategray; }
   .services__item::after {
@@ -1583,7 +1585,10 @@ input[type="radio"].visually-hidden {
   padding-top: 48px;
   padding-left: 11.8%;
   padding-right: 42%;
+  padding-left: 43px;
+  padding-right: 153px;
   padding-bottom: 137.9%;
+  padding-bottom: 511px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid transparent; }
@@ -1626,6 +1631,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 33px; }
   .services__item {
     width: 720px;
+    max-width: 720px;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 46px; }
@@ -2732,28 +2738,6 @@ input[type="radio"].visually-hidden {
   padding-left: 39px;
   padding-right: 39px; }
 
-.modal__header {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 140.62%;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 12px; }
-
-.modal__text {
-  font-family: "PTMono-Regular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  width: 97%;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 32px; }
-
 .modal__show {
   display: block;
   -webkit-animation: bounce 0.6s;
@@ -2785,11 +2769,8 @@ input[type="radio"].visually-hidden {
             transform: translateY(1px);
     -webkit-filter: saturate(150%);
             filter: saturate(150%); }
-  .modal__close .btn:hover,
-  .modal__close .btn:focus {
-    color: #9555af;
-    border-color: currentColor;
-    background-color: white; }
+  .modal__close:hover, .modal__close:focus {
+    border: solid 1px #FFFFFF; }
 
 .form {
   display: -webkit-box;
@@ -2933,7 +2914,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer; }
 
 .form input[type="checkbox"]:hover + label::before {
-  opacity: 0.6; }
+  background-color: rgba(255, 255, 255, 0.4); }
 
 .form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/checkbox.svg");

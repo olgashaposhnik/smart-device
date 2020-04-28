@@ -123,7 +123,7 @@
 }
 
 .form input[type="checkbox"]:hover+label::before {
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .form input[type="checkbox"]:checked+label::before {
