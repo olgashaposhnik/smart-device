@@ -37,7 +37,7 @@
   justify-content: space-between;
   padding: 0;
   margin: 0 auto;
-  padding-bottom: 126px;
+  padding-bottom: 98px;
 }
 
 .services__item {
@@ -51,6 +51,7 @@
   // padding-bottom: 42.9%;
   position: relative;
   background-color: slategray;
+  margin-bottom: 30px;
 
   &::after {
     content: "";
