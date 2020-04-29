@@ -2916,6 +2916,13 @@ input[type="radio"].visually-hidden {
 .form input[type="checkbox"]:hover + label::before {
   background-color: rgba(255, 255, 255, 0.4); }
 
+.form input[type="checkbox"]:active + label::before {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.form input[type="checkbox"]:focus + label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.4); }
+
 .form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/checkbox.svg");
   margin-right: 17px; }
@@ -2939,8 +2946,6 @@ input[type="radio"].visually-hidden {
           user-select: none;
   padding-top: 8px; }
   .form input[type="checkbox"] + label:hover {
-    color: #FFFFFF; }
-  .form input[type="checkbox"] + label:focus {
     color: #FFFFFF; }
 
 @media (max-width: 1023px) {
