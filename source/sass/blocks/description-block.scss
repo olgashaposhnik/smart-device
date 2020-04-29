@@ -12,6 +12,8 @@
 
   background-color: #1B2D37;
   background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   color: #FFFFFF;
 }
@@ -37,6 +39,7 @@
     background-repeat: no-repeat;
     background-position: top 42px left 799px, top 28px left 788px;
     background-position: top 26% left 90.6%, top 22% left 99.4%;
+    // background-size: contain;
     z-index: 0;
     width: 100%;
     height: 100%;
@@ -262,10 +265,8 @@
       position: absolute;
       background-image: url("../img/board.png");
       background-size: 99%;
-      // background-size: 302px;
+      background-size: 302px;
       left: 0%;
-      // background-position: top 69% left 151px, top 69.6% left 11%;
-      // background-position: top 134px left 151px, top 157px left 10px;
       background-position: top 177px left 10px;
       background-repeat: no-repeat;
       // top: -150px;
