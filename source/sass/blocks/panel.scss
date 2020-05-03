@@ -1,0 +1,8 @@
+@media (max-width: $mobile-width) {
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease-out;
+  }
+}

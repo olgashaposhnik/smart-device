@@ -13,7 +13,7 @@
   padding-bottom: 74px;
 }
 
-.footer-contacts__header{
+.footer-contacts h3 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -26,7 +26,7 @@
   padding-bottom: 25px;
 }
 
-.footer-contacts__text {
+.footer-contacts p {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -60,7 +60,7 @@
     padding-bottom: 59px;
   }
 
-  .footer-contacts__header{
+  .footer-contacts h3 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -73,7 +73,7 @@
     padding-bottom: 25px;
   }
 
-  .footer-contacts__text {
+  .footer-contacts p{
     font-family: "PTMono-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -110,7 +110,7 @@
     }
   }
 
-  .footer-contacts__header{
+  .footer-contacts h3{
     display: none;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-style: normal;
@@ -124,7 +124,7 @@
     padding-bottom: 32px;
   }
 
-  .footer-contacts__text {
+  .footer-contacts p {
     font-family: "PTMono-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;

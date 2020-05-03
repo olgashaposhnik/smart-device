@@ -614,9 +614,8 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
   padding-top: 230px;
-  padding-right: 9%;
+  margin-right: 9%;
   padding-left: 13%;
   background-color: #1B2D37;
   background-image: url("../img/background.png");
@@ -641,16 +640,16 @@ input[type="radio"].visually-hidden {
     position: absolute;
     background-image: url("../img/triangles-main.svg"), url("../img/board.png");
     background-size: 41%, 47%;
+    background-size: 613px, 705px;
     background-repeat: no-repeat;
     background-position: top 42px left 799px, top 28px left 788px;
-    background-position: top 26% left 90.6%, top 22% left 99.4%;
     z-index: 0;
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%; }
 
-.description-block__header {
+.description-block h1 {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -664,7 +663,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 2; }
 
-.description-block__slogan {
+.description-block p {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -674,9 +673,9 @@ input[type="radio"].visually-hidden {
   padding-left: 97px;
   padding-bottom: 44px;
   padding-top: 21px;
-  width: 48%;
+  width: 47%;
   position: relative; }
-  .description-block__slogan::before {
+  .description-block p::before {
     content: "";
     position: absolute;
     background-image: url("../img/rectangle.png");
@@ -701,7 +700,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   width: 407px;
-  width: 27.2%;
+  width: 24.4%;
   min-width: 340px;
   background: #00B2FF;
   border-radius: 5px;
@@ -763,13 +762,13 @@ input[type="radio"].visually-hidden {
       background-repeat: no-repeat;
       top: -150px;
       left: 58%; }
-  .description-block__header {
+  .description-block h1 {
     font-size: 60px;
     line-height: 70px;
     width: 50%;
     padding-top: 111px;
     padding-left: 9%; }
-  .description-block__slogan {
+  .description-block p {
     font-size: 18px;
     line-height: 156.8%;
     margin: 0;
@@ -777,7 +776,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 55px;
     padding-top: 29px;
     width: 62%; }
-    .description-block__slogan::before {
+    .description-block p::before {
       content: "";
       position: absolute;
       background-image: url("../img/rectangle-tablet.png");
@@ -797,9 +796,9 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .description-block {
     width: 100%;
+    padding: 0;
     padding-top: 65px;
     padding-bottom: 70px;
-    padding-left: 4.7%;
     color: #FFFFFF;
     position: relative;
     overflow: hidden; }
@@ -813,6 +812,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
     width: 100%;
     min-width: 200px;
     overflow: visible;
@@ -825,6 +826,7 @@ input[type="radio"].visually-hidden {
       background-size: 302px;
       left: 0%;
       background-position: top 177px left 10px;
+      background-position: top 56.5% right -30%;
       background-repeat: no-repeat; }
     .description-block__wrapper::after {
       content: "";
@@ -836,7 +838,7 @@ input[type="radio"].visually-hidden {
       background-repeat: no-repeat;
       width: 100%;
       height: 100%; }
-  .description-block__header {
+  .description-block h1 {
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.07em;
@@ -846,7 +848,7 @@ input[type="radio"].visually-hidden {
     padding-top: 222px;
     position: relative;
     z-index: 5; }
-  .description-block__slogan {
+  .description-block p {
     font-size: 16px;
     line-height: 156.8%;
     margin: 0;
@@ -856,7 +858,7 @@ input[type="radio"].visually-hidden {
     width: 90%;
     position: relative;
     z-index: 5; }
-    .description-block__slogan::before {
+    .description-block p::before {
       content: "";
       position: absolute;
       background-image: url("../img/rectangle-tablet.png");
@@ -989,13 +991,13 @@ input[type="radio"].visually-hidden {
 .advantages__item:hover svg {
   fill: #FFFFFF; }
 
-.advantages__item:hover .advantages__title {
+.advantages__item:hover .advantages h3 {
   color: #FFFFFF; }
 
-.advantages__item:hover .advantages__description {
+.advantages__item:hover .advantages p {
   color: #FFFFFF; }
 
-.advantages__title {
+.advantages h3 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1008,7 +1010,7 @@ input[type="radio"].visually-hidden {
   padding-top: 15px;
   padding-bottom: 17px; }
 
-.advantages__description {
+.advantages p {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1075,14 +1077,14 @@ input[type="radio"].visually-hidden {
   .advantages__item--confidence,
   .advantages__item--cost {
     min-height: 232px; }
-  .advantages__title {
+  .advantages h3 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     margin: 0;
     padding: 0;
     padding-left: 7.6%;
     padding-top: 2px;
     padding-bottom: 9px; }
-  .advantages__description {
+  .advantages p {
     margin: 0;
     padding: 0;
     padding-left: 7.6%;
@@ -1121,7 +1123,7 @@ input[type="radio"].visually-hidden {
     min-height: 232px; }
   .advantages__item--cost {
     min-height: 244px; }
-  .advantages__title {
+  .advantages h3 {
     width: 90%;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 20px;
@@ -1140,7 +1142,7 @@ input[type="radio"].visually-hidden {
     margin-top: -7px; }
   .advantages__item--cost .advantages__title {
     padding-bottom: 14px; }
-  .advantages__description {
+  .advantages p {
     font-size: 16px;
     line-height: 22px;
     margin: 0;
@@ -1198,7 +1200,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 3; }
 
-.consult__header {
+.consult h2 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1211,7 +1213,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 10px;
   position: relative; }
 
-.consult__text {
+.consult p {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1256,7 +1258,7 @@ input[type="radio"].visually-hidden {
             justify-content: space-between;
     position: relative;
     z-index: 3; }
-  .consult__header {
+  .consult h2 {
     font-size: 32px;
     line-height: 140.62%;
     width: 100%;
@@ -1264,7 +1266,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding-top: 80px;
     padding-bottom: 17px; }
-  .consult__text {
+  .consult p {
     padding-bottom: 54px; }
   .consult__form {
     margin-left: 2px; } }
@@ -1298,7 +1300,7 @@ input[type="radio"].visually-hidden {
             justify-content: space-between;
     position: relative;
     z-index: 3; }
-  .consult__header {
+  .consult h2 {
     font-size: 28px;
     line-height: 140.62%;
     width: 100%;
@@ -1306,7 +1308,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 13px; }
-  .consult__text {
+  .consult p {
     padding-bottom: 25px;
     font-size: 16px;
     line-height: 22px;
@@ -1338,7 +1340,7 @@ input[type="radio"].visually-hidden {
     width: 860px;
     height: 484px; }
 
-.about-company__header {
+.about-company h2 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1421,7 +1423,7 @@ input[type="radio"].visually-hidden {
       z-index: 0;
       width: 249px;
       height: 361px; }
-  .about-company__header {
+  .about-company h2 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 32px;
     line-height: 140.62%;
@@ -1444,7 +1446,7 @@ input[type="radio"].visually-hidden {
     width: 97%;
     padding-bottom: 23px; }
   .about-company__text--dektop {
-    display: none; }
+    display: block; }
   .about-company__button {
     background-color: transparent;
     margin-left: 27.6%;
@@ -1461,7 +1463,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 64px; }
     .about-company::before {
       display: none; }
-  .about-company__header {
+  .about-company h2 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 28px;
     margin: 0;
@@ -1477,11 +1479,8 @@ input[type="radio"].visually-hidden {
     width: 96%;
     overflow: hidden;
     text-overflow: ellipsis; }
-  .about-company__text--tablet {
-    display: block;
-    padding-bottom: 13px; }
   .about-company__text--dektop {
-    display: none; }
+    display: block; }
   .about-company__button {
     background-color: transparent;
     margin-left: 5.6%;
@@ -2295,7 +2294,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #1B2D37; }
 
-.navigation__header {
+.navigation h3 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2379,7 +2378,7 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #1B2D37; }
-  .navigation__header {
+  .navigation h3 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2464,7 +2463,7 @@ input[type="radio"].visually-hidden {
       background-color: rgba(98, 105, 98, 0.2);
       left: 0;
       top: 0; }
-  .navigation__header {
+  .navigation h3 {
     display: none;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-style: normal;
@@ -2538,7 +2537,7 @@ input[type="radio"].visually-hidden {
   width: 34%;
   padding-bottom: 74px; }
 
-.footer-contacts__header {
+.footer-contacts h3 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2550,7 +2549,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-bottom: 25px; }
 
-.footer-contacts__text {
+.footer-contacts p {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2560,9 +2559,9 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   padding: 0;
   margin: 0; }
-  .footer-contacts__text:hover {
+  .footer-contacts p:hover {
     color: #00B2FF; }
-  .footer-contacts__text:active {
+  .footer-contacts p:active {
     opacity: 0.6; }
 
 @media (max-width: 1023px) {
@@ -2580,7 +2579,7 @@ input[type="radio"].visually-hidden {
     padding-top: 65px;
     width: 47.8%;
     padding-bottom: 59px; }
-  .footer-contacts__header {
+  .footer-contacts h3 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2591,7 +2590,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     padding-bottom: 25px; }
-  .footer-contacts__text {
+  .footer-contacts p {
     font-family: "PTMono-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2626,7 +2625,7 @@ input[type="radio"].visually-hidden {
       background-color: rgba(98, 105, 98, 0.2);
       left: 0;
       top: 0; }
-  .footer-contacts__header {
+  .footer-contacts h3 {
     display: none;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-style: normal;
@@ -2638,7 +2637,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     padding-bottom: 32px; }
-  .footer-contacts__text {
+  .footer-contacts p {
     font-family: "PTMono-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2687,12 +2686,6 @@ input[type="radio"].visually-hidden {
       color: #00B2FF; }
     .accordion:active {
       opacity: 0.6; }
-  .accordion__panel {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0;
-    -webkit-transition: max-height 0.3s ease-out;
-    transition: max-height 0.3s ease-out; }
   .accordion__active {
     position: relative; }
     .accordion__active::after {
@@ -2705,11 +2698,24 @@ input[type="radio"].visually-hidden {
       height: 16px;
       right: 0px; } }
 
+@media (max-width: 767px) {
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out; } }
+
 .modal {
+  display: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 5; }
+
+.modal__overlay {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  display: none;
   width: 490px;
   padding: 0;
   margin: 0 auto;
@@ -2720,10 +2726,11 @@ input[type="radio"].visually-hidden {
   bottom: 50%;
   margin-left: -245px;
   margin-bottom: -302px;
-  z-index: 150; }
+  z-index: 10; }
 
 .modal__window {
   position: relative;
+  z-index: 10;
   width: auto;
   margin: 10px;
   width: 490px;
@@ -2736,7 +2743,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
   padding: 0;
   padding-left: 39px;
   padding-right: 39px; }
@@ -2748,7 +2754,8 @@ input[type="radio"].visually-hidden {
 .modal__show {
   display: block;
   -webkit-animation: bounce 0.6s;
-  animation: bounce 0.6s; }
+  animation: bounce 0.6s;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .modal__error {
   -webkit-animation: shake 0.6s;

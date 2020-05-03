@@ -96,15 +96,15 @@
   fill: #FFFFFF;
 }
 
-.advantages__item:hover .advantages__title {
+.advantages__item:hover .advantages h3 {
   color: #FFFFFF;
 }
 
-.advantages__item:hover .advantages__description {
+.advantages__item:hover .advantages p {
   color: #FFFFFF;
 }
 
-.advantages__title {
+.advantages h3 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -118,7 +118,7 @@
   padding-bottom: 17px;
 }
 
-.advantages__description {
+.advantages p {
   font-family: "PTMono-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -221,7 +221,7 @@
     min-height: 232px;
   }
 
-  .advantages__title {
+  .advantages h3 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     margin: 0;
     padding: 0;
@@ -230,7 +230,7 @@
     padding-bottom: 9px;
   }
 
-  .advantages__description {
+  .advantages p {
     margin: 0;
     padding: 0;
     padding-left: 7.6%;
@@ -286,7 +286,7 @@
     min-height: 244px;
   }
 
-  .advantages__title {
+  .advantages h3 {
     width: 90%;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 20px;
@@ -315,7 +315,7 @@
     padding-bottom: 14px;
   }
 
-  .advantages__description {
+  .advantages p {
     font-size: 16px;
     line-height: 22px;
     margin: 0;

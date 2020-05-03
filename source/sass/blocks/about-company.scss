@@ -21,7 +21,7 @@
   }
 }
 
-.about-company__header {
+.about-company h2 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -120,7 +120,7 @@
     }
   }
 
-  .about-company__header {
+  .about-company h2 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 32px;
     line-height: 140.62%;
@@ -150,7 +150,7 @@
   }
 
   .about-company__text--dektop {
-    display: none;
+    display: block;
   }
 
   .about-company__button {
@@ -175,7 +175,7 @@
     }
   }
 
-  .about-company__header {
+  .about-company h2 {
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-size: 28px;
     margin: 0;
@@ -196,13 +196,13 @@
     text-overflow: ellipsis;
   }
 
-  .about-company__text--tablet {
-    display: block;
-    padding-bottom: 13px;
-  }
+  // .about-company__text--tablet {
+  //   display: block;
+  //   padding-bottom: 13px;
+  // }
 
   .about-company__text--dektop {
-    display: none;
+    display: block;
   }
 
   .about-company__button {
