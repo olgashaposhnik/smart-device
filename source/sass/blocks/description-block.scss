@@ -260,7 +260,7 @@
     min-width: 200px;
     overflow: visible;
     margin: 0 auto;
-
+    overflow: hidden;
 
     &::before {
       content: "";
