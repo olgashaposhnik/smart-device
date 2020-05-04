@@ -186,7 +186,7 @@ function mask(event) {
 // обрезаем текст в блоке "о компании"
 
 var isMobile = false;
-var size = 178;
+var size = 200;
 var newsContent = document.querySelector('.about-company__text--dektop');
 var newsText = newsContent.textContent;
 console.log(newsText.length);

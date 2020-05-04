@@ -184,7 +184,7 @@ input[type="text"]:first-of-type {
     padding-bottom: 17px;
   }
 
-  .form__input--name {
+  .input[type="text"]:first-of-type {
     margin-right: 5.2%;
   }
 
@@ -257,6 +257,10 @@ input[type="text"]:first-of-type {
     width: 100%;
   }
 
+  .form input[type=text]:first-of-type {
+    margin-right: 0%;
+  }
+
   .form input,
   .form textarea {
     font-size: 16px;
@@ -270,10 +274,6 @@ input[type="text"]:first-of-type {
   .form input {
     width: 100%;
     padding-bottom: 17px;
-  }
-
-  .form__input--name {
-    margin-right: 0%;
   }
 
   .form textarea {
