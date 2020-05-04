@@ -991,10 +991,10 @@ input[type="radio"].visually-hidden {
 .advantages__item:hover svg {
   fill: #FFFFFF; }
 
-.advantages__item:hover .advantages h3 {
+.advantages__item:hover h3 {
   color: #FFFFFF; }
 
-.advantages__item:hover .advantages p {
+.advantages__item:hover p {
   color: #FFFFFF; }
 
 .advantages h3 {
