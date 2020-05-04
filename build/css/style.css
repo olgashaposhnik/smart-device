@@ -1375,7 +1375,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
   color: #00B2FF;
-  max-width: 180px;
   min-height: 45px;
   border: 1px solid #00B2FF;
   -webkit-box-sizing: border-box;
@@ -1383,14 +1382,17 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   background-color: transparent;
   margin-left: 305px;
+  margin-right: 13%;
   margin-top: 17px;
   padding-top: 13px;
   padding-bottom: 13px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
   cursor: pointer;
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
   .about-company__button:hover {
     color: #FFFFFF;
     background-color: #00B2FF;
@@ -1436,15 +1438,13 @@ input[type="radio"].visually-hidden {
     text-overflow: ellipsis; }
   .about-company__text--tablet {
     display: block;
-    width: 97%;
     padding-bottom: 23px; }
   .about-company__text--dektop {
     display: block; }
   .about-company__button {
     background-color: transparent;
     margin-left: 27.6%;
-    margin-top: 19px;
-    width: 23.5%; } }
+    margin-top: 19px; } }
 
 @media (max-width: 767px) {
   .about-company {
@@ -1537,10 +1537,11 @@ input[type="radio"].visually-hidden {
 .services__item {
   width: 31.6%;
   max-width: 370px;
-  max-height: 620px;
+  min-height: 620px;
   position: relative;
   background-color: #1B2D37;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background-size: cover; }
   .services__item::after {
     content: "";
     position: absolute;
@@ -1582,8 +1583,8 @@ input[type="radio"].visually-hidden {
   padding-right: 42%;
   padding-left: 43px;
   padding-right: 153px;
-  padding-bottom: 137.9%;
-  padding-bottom: 511px;
+  padding-bottom: 42px;
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid transparent; }
@@ -1670,7 +1671,7 @@ input[type="radio"].visually-hidden {
     padding-top: 39px;
     padding-left: 44px;
     padding-right: 502px;
-    padding-bottom: 155px;
+    padding-bottom: 39px;
     position: relative; }
     .services__item__link--catalog {
       padding-top: 47px;
@@ -1755,7 +1756,7 @@ input[type="radio"].visually-hidden {
     padding-top: 19px;
     padding-left: 34px;
     padding-right: 102px;
-    padding-bottom: 175px; }
+    padding-bottom: 19px; }
     .services__item__link--catalog {
       padding-top: 29px;
       padding-bottom: 165px; } }

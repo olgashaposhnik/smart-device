@@ -43,7 +43,7 @@
 .services__item {
   width: 31.6%;
   max-width: 370px;
-  max-height: 620px;
+  min-height: 620px;
   // margin: 0 auto;
   // padding-top: 50px;
   // padding-left: 3.4%;
@@ -52,6 +52,7 @@
   position: relative;
   background-color: #1B2D37;
   margin-bottom: 30px;
+  background-size: cover;
 
   &::after {
     content: "";
@@ -106,8 +107,9 @@
   padding-right: 42%;
   padding-left: 43px;
   padding-right: 153px;
-  padding-bottom: 137.9%;
-  padding-bottom: 511px;
+  // padding-bottom: 137.9%;
+  padding-bottom: 42px;
+  height: 100%;
   box-sizing: border-box;
   border: 1px solid transparent;
 
@@ -210,7 +212,7 @@
     // padding-right: 65%;
     padding-left: 44px;
     padding-right: 502px;
-    padding-bottom: 155px;
+    padding-bottom: 39px;
     position: relative;
 
     &--catalog {
@@ -314,7 +316,7 @@
     // padding-right: 26%;
     padding-left: 34px;
     padding-right: 102px;
-    padding-bottom: 175px;
+    padding-bottom: 19px;
 
     &--catalog {
       padding-top: 29px;
