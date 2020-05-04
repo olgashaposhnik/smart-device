@@ -1810,6 +1810,7 @@ input[type="radio"].visually-hidden {
       align-content: flex-start;
   min-width: 215px;
   width: 17.7%;
+  height: 130px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding-top: 65px; }
@@ -2845,7 +2846,7 @@ input[type="radio"].visually-hidden {
   width: 47.4%;
   padding-bottom: 17px; }
 
-.form__input--name {
+input[type="text"]:first-of-type {
   margin-right: 5.2%; }
 
 .form textarea {

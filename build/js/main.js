@@ -97,7 +97,7 @@ window.addEventListener("keydown", function(evt) {
 
 // плавная прокрутка к якорю
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('.anchor')
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (evt) {
@@ -148,17 +148,17 @@ for (let anchor of anchors) {
 // });
 
 window.addEventListener("DOMContentLoaded", function() {
-function setCursorPosition(pos, elem) {
-    elem.focus();
-    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-    else if (elem.createTextRange) {
-        var range = elem.createTextRange();
-        range.collapse(true);
-        range.moveEnd("character", pos);
-        range.moveStart("character", pos);
-        range.select()
-    }
-}
+// function setCursorPosition(pos, elem) {
+//     elem.focus();
+//     if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+//     else if (elem.createTextRange) {
+//         var range = elem.createTextRange();
+//         range.collapse(true);
+//         range.moveEnd("character", pos);
+//         range.moveStart("character", pos);
+//         range.select()
+//     }
+// }
 
 function mask(event) {
     var matrix = "+7 (999) 999-99-99",
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isMobile = true;
     } if (isMobile) {
   if(newsText.length > size){
-    newsContent.textContent = "newsText.slice(0, size) + '..'";
+    newsContent.textContent = newsText.slice(0, size) + '..';
   }
     }
     if (!isMobile) {

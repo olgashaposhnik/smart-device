@@ -33,9 +33,9 @@
         <h1>Печатные платы</h1>
         <!-- <p class="description-block__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p> -->
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="description-block__link" href="#consult">Получить бесплатную консультацию</a>
-        <a class="description-block__mobilelink" href="#consult">Бесплатная консультация</a>
-        <a class="description-block__scroll" href="#advantages">Скролл вниз</a>
+        <a class="description-block__link anchor" href="#consult">Получить бесплатную консультацию</a>
+        <a class="description-block__mobilelink anchor" href="#consult">Бесплатная консультация</a>
+        <a class="description-block__scroll anchors" href="#advantages">Скролл вниз</a>
       </div>
     </section>
     <section id="advantages" class="advantages">
@@ -77,7 +77,7 @@
       <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
       <p class="about-company__text about-company__text--dektop">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
       <!-- <p class="about-company__text about-company__text--tablet">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..</p> -->
-      <a class="about-company__button" href="#header">Подробнее</a>
+      <a class="about-company__button anchor" href="#header">Подробнее</a>
     </section>
     <section id="services" class="services">
       <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
@@ -93,7 +93,7 @@
         <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
         <form class="consult__form form" action="index.html" method="post">
           <label class="consult__label consult__label--name" for="name">Имя</label>
-          <input aria-label="Введите Ваше имя" required class="consult__name form__input--name" type="text" id="name" name="name" placeholder="Имя">
+          <input aria-label="Введите Ваше имя" required class="consult__name" type="text" id="name" name="name" placeholder="Имя">
           <label class="consult__label consult__label--phone" for="phone">Телефон</label>
           <input aria-label="Введите Ваш телефон" required class="consult__phone" value="+7 (999) 999-99-99" type="tel" id="phone" name="phone" placeholder="Телефон">
           <label class="consult__label consult__label--question" for="question">Ваш вопро</label>
@@ -143,27 +143,27 @@
         <div class="page-footer__navigation__wrapper navigation__wrapper navigation__accordion__panel panel">
           <ul class="page-footer__navigation__list__left navigation__list__left">
             <li class="page-footer__navigation__item navigation__item">
-              <a href="#about">О компании</a>
+              <a class="anchor" href="#about">О компании</a>
             </li>
             <li class="page-footer__navigation__item navigation__item">
-              <a href="#services">Продукты</a>
+              <a class="anchor" href="#services">Продукты</a>
             </li>
             <li class="page-footer__navigation__item navigation__item">
-              <a href="#manufacture">Производство печатных плат</a>
+              <a class="anchor" href="#manufacture">Производство печатных плат</a>
             </li>
             <li class="page-footer__navigation__item navigation__item">
-              <a href="#installation">Монтаж печатных плат</a>
+              <a class="anchor" href="#installation">Монтаж печатных плат</a>
             </li>
           </ul>
           <ul class="page-footer__navigation__item navigation__list__right">
             <li class="navigation__item">
-              <a href="#catalog">Комплектующие</a>
+              <a class="anchor" href="#catalog">Комплектующие</a>
             </li>
             <li class="page-footer__navigation__item navigation__item">
-              <a href="#delivery">Доставка</a>
+              <a class="anchor" href="#delivery">Доставка</a>
             </li>
             <li class="page-footer__navigation__item navigation__item">
-              <a href="#contacts">Контакты</a>
+              <a class="anchor" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -191,7 +191,7 @@
         <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form action="#" class="modal__form form" method="post">
           <label class="modal__label modal__label--name" for="modal__name">Имя</label>
-          <input class="modal__input modal__input--name form__input--name" id="modal__name" name="name" placeholder="Имя" type="text" required>
+          <input class="modal__input modal__input--name" id="modal__name" name="name" placeholder="Имя" type="text" required>
           <label class="modal__label modal__label--phone" for="modal__phone">Телефон</label>
           <input class="modal__input modal__input--phone" id="modal__phone" value="+7 (999) 999-99-99" name="modal__phone" placeholder="Телефон" type="tel" required>
           <label class="modal__label modal__label--question" for="modal__question">Ваш вопрос</label>
