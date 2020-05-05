@@ -83,18 +83,30 @@
     background-image: url("../img/service1.png");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service1@2x.png");
+    }
   }
 
   &--installation {
     background-image: url("../img/service2.png");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service2@2x.png");
+    }
   }
 
   &--catalog {
     background-image: url("../img/service3.png");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service3@2x.png");
+    }
   }
 }
 
@@ -107,6 +119,7 @@
   padding-right: 42%;
   padding-left: 43px;
   padding-right: 153px;
+  // padding-right: 18px;
   // padding-bottom: 137.9%;
   padding-bottom: 42px;
   height: 100%;
@@ -188,18 +201,30 @@
       background-image: url("../img/service1-tablet.png");
       background-position: center;
       background-repeat: repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service1-tablet@2x.png");
+      }
     }
 
     &--installation {
       background-image: url("../img/service2-tablet.png");
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service2-tablet@2x.png");
+      }
     }
 
     &--catalog {
       background-image: url("../img/service3-tablet.png");
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service3-tablet@2x.png");
+      }
     }
   }
 
@@ -212,6 +237,7 @@
     // padding-right: 65%;
     padding-left: 44px;
     padding-right: 502px;
+    // padding-right: 18px;
     padding-bottom: 39px;
     position: relative;
 
@@ -289,12 +315,20 @@
       background-image: url("../img/service1-mobile.png");
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service1-mobile@2x.png");
+      }
     }
 
     &--installation {
       background-image: url("../img/service2-mobile.png");
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service2-mobile@2x.png");
+      }
     }
 
     &--catalog {
@@ -303,6 +337,10 @@
       background-repeat: no-repeat;
       // padding-top: 49px;
       // padding-bottom: 184px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service3-mobile@2x.png");
+      }
     }
   }
 

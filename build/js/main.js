@@ -85,11 +85,13 @@ form.addEventListener("submit", function(evt) {
 
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal__show")) {
-        if (popup) {
-        popup.classList.remove("modal__show");
-        popup.classList.remove("modal__error");
+      if (popup) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal__show")) {
+          if (popup) {
+          popup.classList.remove("modal__show");
+          popup.classList.remove("modal__error");
+        }
       }
     }
   }
@@ -114,83 +116,13 @@ for (let anchor of anchors) {
 
 // маска для поля с телефоном
 
-// import IMask from 'imask';
 var inputPhone = document.getElementById("phone");
 var modalPhone = document.getElementById("modal__phone");
 var maskOptions = {
-  mask: '+{7} (999) 999-99-99'
+  mask: '+{7}(000)000-00-00'
 };
 var phoneMask = IMask(inputPhone, maskOptions);
 var modalPhonemask = IMask(modalPhone, maskOptions);
-
-// window.addEventListener("DOMContentLoaded", function() {
-//   function setCursorPosition(pos, elem) {
-//     elem.focus();
-//     if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-//     else if (elem.createTextRange) {
-//       var range = elem.createTextRange();
-//       range.collapse(true);
-//       range.moveEnd("character", pos);
-//       range.moveStart("character", pos);
-//       range.select()
-//       }
-//     }
-//     function mask(event) {
-//       var matrix = this.defaultValue,
-//       i = 0,
-//       def = matrix.replace(/\D/g, ""),
-//       val = this.value.replace(/\D/g, "");
-//       def.length >= val.length && (val = def);
-//       matrix = matrix.replace(/[_\d]/g, function(a) {
-//         return val.charAt(i++) || "_"
-//       });
-//       this.value = matrix;
-//       i = matrix.lastIndexOf(val.substr(-1));
-//       i < matrix.length && matrix != this.defaultValue ? i++ : i = matrix.indexOf("_");
-//       setCursorPosition(i, this)
-//     }
-//     // var input = document.querySelector("input");
-//     var inputPhone = document.getElementById("phone");
-//     inputPhone.addEventListener("phone", mask, false);
-//     var modalPhone = document.getElementById("modal__phone");
-//     modalPhone.addEventListener("modal__phone", mask, false);
-// });
-
-// window.addEventListener("DOMContentLoaded", function() {
-// // function setCursorPosition(pos, elem) {
-// //     elem.focus();
-// //     if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-// //     else if (elem.createTextRange) {
-// //         var range = elem.createTextRange();
-// //         range.collapse(true);
-// //         range.moveEnd("character", pos);
-// //         range.moveStart("character", pos);
-// //         range.select()
-// //     }
-// // }
-
-// function mask(event) {
-//     var matrix = "+7 (999) 999-99-99",
-//         i = 0,
-//         def = matrix.replace(/\D/g, ""),
-//         val = this.value.replace(/\D/g, "");
-//     if (def.length >= val.length) val = def;
-//     this.value = matrix.replace(/./g, function(a) {
-//         return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
-//     });
-//     if (event.type == "blur") {
-//         if (this.value.length == 2) this.value = ""
-//     } else setCursorPosition(this.value.length, this)
-// };
-//     var inputPhone = document.getElementById("phone");
-//     inputPhone.addEventListener("phone", mask, false);
-//     inputPhone.addEventListener("focus", mask, false);
-//     inputPhone.addEventListener("blur", mask, false);
-//     var modalPhone = document.getElementById("modal__phone");
-//     modalPhone.addEventListener("modal__phone", mask, false);
-//     modalPhone.addEventListener("focus", mask, false);
-//     modalPhone.addEventListener("blur", mask, false);
-// });
 
 // обрезаем текст в блоке "о компании"
 

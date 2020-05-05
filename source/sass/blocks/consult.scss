@@ -13,6 +13,10 @@
   background-position: top 42% left 24.7%, top 51% left 15%;
   z-index: 2;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper_airplane@2x.png"), url("../img/triangles-left-write.svg");
+  }
+
   &::before {
     content: "";
     position: absolute;
