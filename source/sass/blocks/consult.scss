@@ -7,15 +7,16 @@
   color: #FFFFFF;
   background: #00B2FF;
   position: relative;
-  background-image: url("../img/paper_airplane.png"), url("../img/triangles-left-write.svg");
-  background-size: 26.5%, 31.7%;
-  background-repeat: no-repeat;
-  background-position: top 42% left 24.7%, top 51% left 15%;
+  // background-image: url("../img/paper_airplane.png"), url("../img/triangles-left-write.svg");
+  // background-size: 26.5%, 31.7%;
+  // // background-size: 516px, 610px;
+  // background-repeat: no-repeat;
+  // background-position: top 42% left 24.7%, top 51% left 15%;
   z-index: 2;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/paper_airplane@2x.png"), url("../img/triangles-left-write.svg");
-  }
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/paper_airplane@2x.png"), url("../img/triangles-left-write.svg");
+  // }
 
   &::before {
     content: "";
@@ -30,8 +31,20 @@
   }
 }
 
+.consult__container {
+  background-image: url("../img/paper_airplane.png"), url("../img/triangles-left-write.svg");
+  background-size: 34.5%,40.7%;
+  background-repeat: no-repeat;
+  background-position: top 42% left 13.9%,top 51% right 102%;
+  z-index: 2;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper_airplane@2x.png"), url("../img/triangles-left-write.svg");
+  }
+}
+
 .consult__wrapper {
-  width: 29.7%;
+  width: 40.4%;
   margin: 0;
   padding: 0;
   margin-left: 50.6%;
@@ -51,7 +64,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  padding-top: 92px;
+  padding-top: 90px;
   padding-bottom: 10px;
   position: relative;
 }
@@ -90,8 +103,12 @@
     }
   }
 
+  .consult__container {
+    background-image: none;
+  }
+
   .consult__wrapper {
-    width: 76.6%;
+    width: 83.3%;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -135,8 +152,13 @@
     }
   }
 
+  .consult__container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .consult__wrapper {
-    width: 91%;
+    width: 100%;
     padding: 0;
     margin-left: 0;
     margin-right: 0;

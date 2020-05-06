@@ -30,7 +30,7 @@
   </header>
   <main class="page-main">
     <section class="description-block">
-      <div class="description-block__wrapper">
+      <div class="description-block__wrapper container">
         <!-- <h1 class="description-block__header">Печатные платы</h1> -->
         <h1>Печатные платы</h1>
         <!-- <p class="description-block__slogan">производство и монтаж, поставка комплектующих, блоков и модулей</p> -->
@@ -42,7 +42,7 @@
     </section>
     <section id="advantages" class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages__list">
+      <ul class="advantages__list container">
         <li class="advantages__item advantages__item--active advantages__item--terms">
           <svg height="35px" width="29px">
             <use xlink:href="img/sprite.svg#terms"></use>
@@ -74,7 +74,7 @@
         </li>
       </ul>
     </section>
-    <section id="about" class="about-company">
+    <section id="about" class="about-company container">
       <h2>О компании</h2>
       <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
       <p class="about-company__text about-company__text--dektop">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
@@ -82,109 +82,115 @@
       <a class="about-company__button anchor" href="#header">Подробнее</a>
     </section>
     <section id="services" class="services">
-      <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
-      <ul class="services__list">
-        <li class="services__item services__item--manufacture" id="manufacture"><a class="services__item__link" href=#>Производство печатных плат</a></li>
-        <li class="services__item services__item--installation" id="installation"><a class="services__item__link" href=#>Монтаж печатных плат</a></li>
-        <li class="services__item services__item--catalog" id="catalog"><a class="services__item__link services__item__link--catalog" href=#>Комплектующие для светотехники</a></li>
-      </ul>
+      <div class="services__container container">
+        <h2 class="services__header">Service Device предлагает следующие товары и услуги</h2>
+        <ul class="services__list">
+          <li class="services__item services__item--manufacture" id="manufacture"><a class="services__item__link" href=#>Производство печатных плат</a></li>
+          <li class="services__item services__item--installation" id="installation"><a class="services__item__link" href=#>Монтаж печатных плат</a></li>
+          <li class="services__item services__item--catalog" id="catalog"><a class="services__item__link services__item__link--catalog" href=#>Комплектующие для светотехники</a></li>
+        </ul>
+      </div>
     </section>
     <section class="consult" id="consult">
-      <div class="consult__wrapper">
-        <h2>Остались вопросы? Задайте их нам!</h2>
-        <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
-        <form class="consult__form form" action="index.html" method="post">
-          <label class="consult__label consult__label--name" for="name">Имя</label>
-          <input aria-label="Введите Ваше имя" required class="consult__name" type="text" id="name" name="name" placeholder="Имя">
-          <label class="consult__label consult__label--phone" for="phone">Телефон</label>
-          <input aria-label="Введите Ваш телефон" required class="consult__phone" type="tel" id="phone" name="phone" placeholder="Телефон">
-          <label class="consult__label consult__label--question" for="question">Ваш вопро</label>
-          <textarea aria-label="Введите Ваш вопрос" required class="consult__question" id="question" name="question" placeholder="Ваш вопрос" cols="30" rows="3"></textarea>
-          <button type="submit" class="consult__button">Задать вопрос</button>
-          <input class="consult__checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
-          <label class="consult__checkbox__label form__checkbox__label" for="agree">Я согласен на обработку персональных данных</label>
-        </form>
+      <div class="consult__container container">
+        <div class="consult__wrapper">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p class="consult__text">Мы проконсультируем Вас бесплатно</p>
+          <form class="consult__form form" action="index.html" method="post">
+            <label class="consult__label consult__label--name" for="name">Имя</label>
+            <input aria-label="Введите Ваше имя" required class="consult__name" type="text" id="name" name="name" placeholder="Имя">
+            <label class="consult__label consult__label--phone" for="phone">Телефон</label>
+            <input aria-label="Введите Ваш телефон" required class="consult__phone" type="tel" id="phone" name="phone" placeholder="Телефон">
+            <label class="consult__label consult__label--question" for="question">Ваш вопро</label>
+            <textarea aria-label="Введите Ваш вопрос" required class="consult__question" id="question" name="question" placeholder="Ваш вопрос" cols="30" rows="3"></textarea>
+            <button type="submit" class="consult__button">Задать вопрос</button>
+            <input class="consult__checkbox" type="checkbox" id="agree" name="agree" value="yes" checked>
+            <label class="consult__checkbox__label form__checkbox__label" for="agree">Я согласен на обработку персональных данных</label>
+          </form>
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <svg height="52px" width="215px">
-        <use xlink:href="img/sprite.svg#logo-footer"></use>
-      </svg>
-    </a>
-    <div class="page-footer__social social">
-      <ul class="page-footer__social__list social__list">
-        <li class="page-footer__social__item social__item">
-          <a class="page-footer__social__link page-footer__social__link--facebook social__link social__link--facebook" aria-label="facebook" href="#">
-            <svg height="27px" width="27px">
-              <use xlink:href="img/sprite.svg#fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="page-footer__social__item social__item">
-          <a class="page-footer__social__link page-footer__social__link--ok social__link social__link--ok" aria-label="odnoklassniki" href="#">
-            <svg height="27px" width="27px">
-              <use xlink:href="img/sprite.svg#ok"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="page-footer__social__item social__item">
-          <a class="page-footer__social__link page-footer__social__link--vk social__link social__link--vk" aria-label="vkontakte" href="#">
-            <svg height="27px" width="27px">
-              <use xlink:href="img/sprite.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__wrapper">
-      <nav class="page-footer__navigation navigation">
-        <h3>Разделы сайта</h3>
-        <button type="button" class="page-footer__accordion navigation__accordion accordion">Разделы сайта</button>
-        <div class="page-footer__navigation__wrapper navigation__wrapper navigation__accordion__panel panel">
-          <ul class="page-footer__navigation__list__left navigation__list__left">
-            <li class="page-footer__navigation__item navigation__item">
-              <a class="anchor" href="#about">О компании</a>
-            </li>
-            <li class="page-footer__navigation__item navigation__item">
-              <a class="anchor" href="#services">Продукты</a>
-            </li>
-            <li class="page-footer__navigation__item navigation__item">
-              <a class="anchor" href="#manufacture">Производство печатных плат</a>
-            </li>
-            <li class="page-footer__navigation__item navigation__item">
-              <a class="anchor" href="#installation">Монтаж печатных плат</a>
-            </li>
-          </ul>
-          <ul class="page-footer__navigation__item navigation__list__right">
-            <li class="navigation__item">
-              <a class="anchor" href="#catalog">Комплектующие</a>
-            </li>
-            <li class="page-footer__navigation__item navigation__item">
-              <a class="anchor" href="#delivery">Доставка</a>
-            </li>
-            <li class="page-footer__navigation__item navigation__item">
-              <a class="anchor" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-footer__contacts footer-contacts">
-        <h3>Наш офис</h3>
-        <button type="button" class="page-footer__accordion footer-contacts__accordion accordion">Наш офис</button>
-        <div class="footer-contacts__accordion__panel panel">
-          <p>г. Мытищи, Олимпийский проспект, д.10</p>
-          <p><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
-          <p><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
-          <p><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
+    <div class="page-footer__wrap container">
+      <a class="page-footer__logo">
+        <svg height="52px" width="215px">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="page-footer__social__list social__list">
+          <li class="page-footer__social__item social__item">
+            <a class="page-footer__social__link page-footer__social__link--facebook social__link social__link--facebook" aria-label="facebook" href="#">
+              <svg height="27px" width="27px">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social__item social__item">
+            <a class="page-footer__social__link page-footer__social__link--ok social__link social__link--ok" aria-label="odnoklassniki" href="#">
+              <svg height="27px" width="27px">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social__item social__item">
+            <a class="page-footer__social__link page-footer__social__link--vk social__link social__link--vk" aria-label="vkontakte" href="#">
+              <svg height="27px" width="27px">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__navigation navigation">
+          <h3>Разделы сайта</h3>
+          <button type="button" class="page-footer__accordion navigation__accordion accordion">Разделы сайта</button>
+          <div class="page-footer__navigation__wrapper navigation__wrapper navigation__accordion__panel panel">
+            <ul class="page-footer__navigation__list__left navigation__list__left">
+              <li class="page-footer__navigation__item navigation__item">
+                <a class="anchor" href="#about">О компании</a>
+              </li>
+              <li class="page-footer__navigation__item navigation__item">
+                <a class="anchor" href="#services">Продукты</a>
+              </li>
+              <li class="page-footer__navigation__item navigation__item">
+                <a class="anchor" href="#manufacture">Производство печатных плат</a>
+              </li>
+              <li class="page-footer__navigation__item navigation__item">
+                <a class="anchor" href="#installation">Монтаж печатных плат</a>
+              </li>
+            </ul>
+            <ul class="page-footer__navigation__item navigation__list__right">
+              <li class="navigation__item">
+                <a class="anchor" href="#catalog">Комплектующие</a>
+              </li>
+              <li class="page-footer__navigation__item navigation__item">
+                <a class="anchor" href="#delivery">Доставка</a>
+              </li>
+              <li class="page-footer__navigation__item navigation__item">
+                <a class="anchor" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-footer__contacts footer-contacts">
+          <h3>Наш офис</h3>
+          <button type="button" class="page-footer__accordion footer-contacts__accordion accordion">Наш офис</button>
+          <div class="footer-contacts__accordion__panel panel">
+            <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            <p><a href="tel:+74955894050">+7 (495) 589-40-50</a></p>
+            <p><a href="tel:+79250038767">+7 (925) 003-87-67</a></p>
+            <p><a href="tel:+792692608079">+7 (926) 926-080-79</a></p>
+          </div>
         </div>
       </div>
+      <p class="page-footer__rights">Все права защищены</p>
+      <p class="page-footer__year">1999-2018 SD Service Devices</p>
+      <a class="page-footer__conditions">Условия конфиденциальности</a>
+      <a href="#" class="page-footer__link">Developed by wow studio</a>
     </div>
-    <p class="page-footer__rights">Все права защищены</p>
-    <p class="page-footer__year">1999-2018 SD Service Devices</p>
-    <a class="page-footer__conditions">Условия конфиденциальности</a>
-    <a href="#" class="page-footer__link">Developed by wow studio</a>
   </footer>
   <section class="modal">
     <div class="modal__overlay">

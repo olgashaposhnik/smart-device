@@ -12,7 +12,9 @@
   padding-top: 62px;
   position: absolute;
   top: 0;
-  left: calc(50% - 750px);
+  right: 50%;
+  transform: translateX(50%);
+  // left: calc(50% - 750px);
   // z-index: 2;
 }
 
@@ -60,10 +62,19 @@
     padding-right: 2.7%;
     padding-left: 3.3%;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 2;
   }
+
+  // .page-header__container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   width: 100%;
+  //   margin: 0 auto;
+  //   padding: 0;
+  //   justify-content: space-between;
+  //   background-color: transparent;
+  //   z-index: 2;
+  // }
 
   .page-header__logo {
     margin-left: 0px;

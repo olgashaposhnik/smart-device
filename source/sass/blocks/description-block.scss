@@ -4,17 +4,16 @@
   justify-content: space-between;
   width: 100%;
   // margin: 0 auto;
-  // padding-top: 312px;
   padding-top: 230px;
-  margin-right: 9%;
-  padding-left: 13%;
+  // margin-right: 9%;
+  // padding-left: 13%;
   // overflow: hidden;
 
   background-color: #1B2D37;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-
+  overflow: hidden;
   color: #FFFFFF;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -38,7 +37,7 @@
     background-size: 613px, 705px;
     background-repeat: no-repeat;
     background-position: top 42px left 799px, top 28px left 788px;
-    background-position: top 42px left calc(50% + 271px),top 28px left calc(50% + 305px);
+    background-position: top 42px left calc(50% + 356px),top 28px left calc(50% + 390px);
     // background-position: top 26% left 90.6%, top 22% left 99.4%;
     // background-size: contain;
     z-index: 0;
@@ -68,7 +67,7 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 82px;
-  width: 48%;
+  width: 51%;
   min-width: 414px;
   position: relative;
   z-index: 2;
@@ -84,7 +83,7 @@
   padding-left: 97px;
   padding-bottom: 44px;
   padding-top: 21px;
-  width: 47%;
+  width: 50%;
   position: relative;
 
   &::before {
@@ -106,13 +105,13 @@
   line-height: 19px;
   text-align: center;
   padding-top: 17px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   margin-bottom: 275px;
   margin-left: 97px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   width: 407px;
-  width: 24.4%;
+  width: 28.6%;
   min-width: 340px;
   background: #00B2FF;
   border-radius: 5px;
@@ -145,7 +144,7 @@
   width: 293px;
   height: 16px;
   position: absolute;
-  left: -135px;
+  left: -95px;
   top: 406px;
 
   &:hover {
@@ -206,7 +205,7 @@
     width: 50%;
     // padding-left: 68px;
     padding-top: 111px;
-    padding-left: 9%;
+    padding-left: 5.4%;
   }
 
   .description-block p {
@@ -216,7 +215,7 @@
     margin: 0;
     // padding-left: 119px;
     // width: 500px;
-    padding-left: 15.7%;
+    padding-left: 12.8%;
     padding-bottom: 55px;
     padding-top: 29px;
     width: 62%;
@@ -228,7 +227,7 @@
       width: 33px;
       height: 2px;
       top: 45px;
-      left: 70px;
+      left: 40px;
     }
   }
 
@@ -236,8 +235,8 @@
     padding-top: 17px;
     margin-bottom: 163px;
     // margin-left: 119px;
-    margin-left: 15.7%;
-    width: 50.7%;
+    margin-left: 12.8%;
+    width: 55%;
     min-height: 55px;
   }
 

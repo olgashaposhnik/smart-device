@@ -24,6 +24,14 @@
   }
 }
 
+.page-footer__wrap {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .page-footer__logo {
   display: flex;
   flex-direction: row;
@@ -367,7 +375,8 @@
     padding: 0;
     // margin-left: 8.7%;
     margin: 0 auto;
-    padding-top: 26px;
+    padding-top: 0px;
+    margin-top: -5px;
     order: -1;
   }
 
