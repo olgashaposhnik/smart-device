@@ -130,7 +130,6 @@ var isMobile = false;
 var size = 200;
 var newsContent = document.querySelector('.about-company__text--dektop');
 var newsText = newsContent.textContent;
-console.log(newsText.length);
 
 document.addEventListener('DOMContentLoaded', function() {
     if (document.body.clientWidth <= 1023) {
