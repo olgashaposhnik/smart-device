@@ -41,7 +41,9 @@
   ],
   "dependencies": {
     "editorconfig": "^0.15.3",
+    "editorconfig-cli": "^0.3.0",
     "imask": "^6.0.3",
+    "natives": "^1.1.6",
     "stylelint": "^13.3.3"
   }
 }

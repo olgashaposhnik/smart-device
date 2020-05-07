@@ -42,18 +42,6 @@ function scrollLock() {
 
 document.addEventListener("DOMContentLoaded", scrollLock()); // запрещаем скролл страницы
 
-// document.addEventListener("DOMContentLoaded", function() { // запрещаем скролл страницы
-//   var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-//   link.addEventListener('click', function() {
-//     document.body.style.overflow = 'hidden';
-//     link.style.marginLeft = scrollbar;
-//   });
-//   close.addEventListener('click', function() {
-//     document.body.style.overflow = 'visible';
-//     link.style.marginLeft = '0px';
-//   });
-// });
-
 function createStorage(evt) {
   var isStorageSupport = true;
   var storage = "";
@@ -77,33 +65,6 @@ function createStorage(evt) {
 
 link.addEventListener("click", createStorage);
 
-// var isStorageSupport = true;
-// var storage = "";
-
-// try {
-//   storage = localStorage.getItem("name");
-// } catch (err) {
-//   isStorageSupport = false;
-// }
-
-// link.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   popup.classList.add("modal__show");
-//   if (storage) {
-//     name.value = storage;
-//     phone.focus();
-//   } else {
-//     document.getElementById("modal__name").focus();
-//   }
-//   document.getElementById("modal__name").focus();
-// });
-
-// document.onclick = function(e){
-//   if (event.target.className != 'modal' ) {
-//       popup.style.display = 'none';
-//   };
-// };
-
 var popupClose = function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal__show");
@@ -114,11 +75,11 @@ var popupClose = function (evt) {
 
 close.addEventListener("click", popupClose);
 
-// document.addEventListener("click", function(evt) {
-//   if (evt.target.className != 'modal') {
-//     popupClose();
-//   };
-// });
+document.addEventListener("click", function(evt) {
+  if (evt.target.className != 'modal') {
+    popupClose();
+  };
+});
 
 // popup.addEventListener("click", popupClose);
 
