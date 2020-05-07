@@ -1,3 +1,5 @@
+'use strict';
+
 // Реализация аккордеона в подвале
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -26,7 +28,7 @@ var name = popup.querySelector(".modal__input--name");
 var phone = document.getElementById("modal__phone");
 var question = popup.querySelector("[name=question]");
 
-document.addEventListener("DOMContentLoaded", function() { // запрещаем скролл страницы
+function scrollLock() {
   var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
   link.addEventListener('click', function() {
     document.body.style.overflow = 'hidden';
@@ -36,18 +38,32 @@ document.addEventListener("DOMContentLoaded", function() { // запрещаем
     document.body.style.overflow = 'visible';
     link.style.marginLeft = '0px';
   });
-});
-
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("name");
-} catch (err) {
-  isStorageSupport = false;
 }
 
-link.addEventListener("click", function(evt) {
+document.addEventListener("DOMContentLoaded", scrollLock()); // запрещаем скролл страницы
+
+// document.addEventListener("DOMContentLoaded", function() { // запрещаем скролл страницы
+//   var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+//   link.addEventListener('click', function() {
+//     document.body.style.overflow = 'hidden';
+//     link.style.marginLeft = scrollbar;
+//   });
+//   close.addEventListener('click', function() {
+//     document.body.style.overflow = 'visible';
+//     link.style.marginLeft = '0px';
+//   });
+// });
+
+function createStorage(evt) {
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("name");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
   evt.preventDefault();
   popup.classList.add("modal__show");
   if (storage) {
@@ -57,7 +73,30 @@ link.addEventListener("click", function(evt) {
     document.getElementById("modal__name").focus();
   }
   document.getElementById("modal__name").focus();
-});
+}
+
+link.addEventListener("click", createStorage);
+
+// var isStorageSupport = true;
+// var storage = "";
+
+// try {
+//   storage = localStorage.getItem("name");
+// } catch (err) {
+//   isStorageSupport = false;
+// }
+
+// link.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   popup.classList.add("modal__show");
+//   if (storage) {
+//     name.value = storage;
+//     phone.focus();
+//   } else {
+//     document.getElementById("modal__name").focus();
+//   }
+//   document.getElementById("modal__name").focus();
+// });
 
 // document.onclick = function(e){
 //   if (event.target.className != 'modal' ) {
@@ -65,11 +104,29 @@ link.addEventListener("click", function(evt) {
 //   };
 // };
 
-close.addEventListener("click", function(evt) {
+var popupClose = function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal__show");
   popup.classList.remove("modal___error");
-});
+  document.body.style.overflow = 'visible';
+  link.style.marginLeft = '0px';
+}
+
+close.addEventListener("click", popupClose);
+
+// document.addEventListener("click", function(evt) {
+//   if (evt.target.className != 'modal') {
+//     popupClose();
+//   };
+// });
+
+// popup.addEventListener("click", popupClose);
+
+// close.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   popup.classList.remove("modal__show");
+//   popup.classList.remove("modal___error");
+// });
 
 form.addEventListener("submit", function(evt) {
   if (!name.value || !phone.value || !question.value) {
@@ -81,6 +138,7 @@ form.addEventListener("submit", function(evt) {
   if (isStorageSupport) {
     localStorage.setItem("name", name.value);
   }
+  popupClose();
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -91,6 +149,8 @@ window.addEventListener("keydown", function(evt) {
           if (popup) {
           popup.classList.remove("modal__show");
           popup.classList.remove("modal__error");
+          document.body.style.overflow = 'visible';
+          link.style.marginLeft = '0px';
         }
       }
     }

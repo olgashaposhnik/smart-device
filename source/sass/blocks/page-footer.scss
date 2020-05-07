@@ -32,6 +32,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .page-footer__logo {
@@ -189,6 +191,11 @@
       bottom: 15.1%;
       bottom: 69px;
     }
+  }
+
+  .page-footer__wrap {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .page-footer__logo {
