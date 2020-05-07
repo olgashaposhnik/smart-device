@@ -163,6 +163,3 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isMobile) {
     }
 });
-
-
-
