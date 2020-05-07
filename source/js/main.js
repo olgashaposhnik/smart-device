@@ -66,7 +66,7 @@ function createStorage(evt) {
 link.addEventListener("click", createStorage);
 
 var popupClose = function (evt) {
-  evt.preventDefault();
+  // evt.preventDefault();
   popup.classList.remove("modal__show");
   popup.classList.remove("modal___error");
   document.body.style.overflow = 'visible';
@@ -75,8 +75,8 @@ var popupClose = function (evt) {
 
 close.addEventListener("click", popupClose);
 
-document.addEventListener("click", function(evt) {
-  if (evt.target.className != 'modal') {
+popup.addEventListener("click", function(evt) {
+  if (evt.target.classList.contains('modal')) {
     popupClose();
   };
 });
