@@ -105,8 +105,8 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       if (popup) {
-        evt.preventDefault();
         if (popup.classList.contains("modal__show")) {
+          evt.preventDefault();
           if (popup) {
           popup.classList.remove("modal__show");
           popup.classList.remove("modal__error");

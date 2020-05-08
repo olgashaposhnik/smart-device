@@ -15,12 +15,15 @@
     background-repeat: no-repeat;
     // background-position: top 42px left 799px;
     background-position: top 4% left 14.8%;
+    background-size: 220px auto;
     z-index: 0;
     width: 860px;
     height: 484px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/2005@2x.png");
+      width: 860px;
+      height: 484px;
     }
   }
 }

@@ -1377,12 +1377,15 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/2005.png");
     background-repeat: no-repeat;
     background-position: top 4% left 14.8%;
+    background-size: 220px auto;
     z-index: 0;
     width: 860px;
     height: 484px; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .about-company::before {
-        background-image: url("../img/2005@2x.png"); } }
+        background-image: url("../img/2005@2x.png");
+        width: 860px;
+        height: 484px; } }
 
 .about-company h2 {
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
